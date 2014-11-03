@@ -75,7 +75,7 @@ class PollController extends Controller
 		return $this->render('view', [
 			'model' => $this->findModel($id),
 			'answers' => Answer::getVotesNum($id),
-			'all' =>  Answer::getVotesAllNum($id),
+			'votes_num_all' => Answer::getVotesNumAll($id),
 		]);
 	}
 
@@ -137,7 +137,6 @@ class PollController extends Controller
 			
 			try {
 			
-				//Answer::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'poll_id = '.$id);		   
 				$save = $this->createUpdateModel($model, $answers);
 				
 			   	if ($save) {
@@ -152,16 +151,24 @@ class PollController extends Controller
 			}
 		}
 		
+		//If no saved answers, load it from the Poll model
 		if (count($answers) == 0) {
 			$answers = $model->answers;
 		}
 	
 		return $this->render('update', [
 				'model' => $model,
-				'answers' => $answers,
+				'answers' => $answers
 			]);	 
 		
 	}
+	
+	/**
+	 * Create or update the Poll model, save the Answer model which belongs to the Poll
+	 * 
+	 * @param model answer by reference
+	 * @return boolean
+	 */	
 	
 	private function createUpdateModel(&$model, &$answers) {
 	
@@ -170,7 +177,7 @@ class PollController extends Controller
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
 				
 			$pos = 1;
-			$ans_ids = $del_ids = [];
+			$ans_ids = [];
 			
 			foreach (Yii::$app->request->post("Answer")['answer'] as $key => $ans) {
 				
@@ -185,8 +192,6 @@ class PollController extends Controller
 				$answer->answer = strip_tags($ans);
 				$answer->position = $pos++;
 				
-				$caller = next(debug_backtrace())['function'];
-				
 				if (!empty($answer->id)) {
 					//Update						
 					if ($answer->update() !== false) {
@@ -197,7 +202,6 @@ class PollController extends Controller
 						$save = false;
 					}
 				} elseif ($answer->validate()) {
-					
 					//Create
 					$model->link('answers', $answer);
 					$ans_ids[] = $answer->id;
@@ -207,19 +211,11 @@ class PollController extends Controller
 				
 				$answers[] = $answer;
 			}
+			unset($ans, $key);
 			
 			if ($save) {
-				//Delete the deleted answers
-				foreach (Poll::getAnswersIds($model->id) as $ids) {
-					if (!in_array($ids['id'], $ans_ids)) {
-						$del_ids[] = $ids['id'];
-					}
-				}
-				
-				if (count($del_ids) > 0) {
-					Answer::updateAll(['deleted_at' => date('Y-m-d H:i:s')],['id' => $del_ids]);
-					Vote::deleteAll(['answer_id' => $del_ids]);
-				}
+				//delete the deleted answers from the poll
+				$model->deleteAnswers($ans_ids);
 			}
 		} else {
 			$save = false;
@@ -272,7 +268,7 @@ class PollController extends Controller
 	protected function findModel($id)
 	{
 		$model = Poll::find()
-			->select(['id','question', 'status', 'status_on','status_on_time','status_off','status_off_time', 'created_at','updated_at'])
+			->select(['id','question', 'status', 'status_on', 'status_off', 'created_at','updated_at'])
 			->where('deleted_at IS NULL AND id = '.$id)->one();
 		
 		if ($model !== null) {
@@ -283,7 +279,9 @@ class PollController extends Controller
 	}
 	
 	/**
-	 *
+	 * Add an Answer to the Poll, verify via the Answer model
+	 * 
+	 * @return Array
 	 */
 	
 	public function actionAddAnswer()
@@ -297,18 +295,20 @@ class PollController extends Controller
 			Yii::$app->response->format = Response::FORMAT_JSON;
 		}
 		
-		$post = $request->post();
-		
-		if (isset($post['answer'])) {
+		if (isset($request->post()['answer'])) {
 			$answer = new Answer();
-			$answer->answer = strip_tags($post['answer']);
+			$answer->answer = strip_tags($request->post()['answer']);
+			
 			$answer->setScenario('add');
+			
 			if ($answer->validate()) {
 				$text[] = $this->renderPartial('_answer', [
 					'model' => $answer,
 				]);			
 			} else {
 				$save = false;
+				
+				//check all errors for the answer
 				foreach ($answer->errors as $error) {
 					foreach ($error as $e) {
 						$text[] = $e;

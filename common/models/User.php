@@ -38,7 +38,7 @@ class User extends ActiveRecord implements IdentityInterface
 		2 => 'Admin'
 	];
 	
-	public static function getUserType() {
+	public static function getUserTypes() {
 		return self::$_user_types;
 	}
 	
@@ -76,7 +76,7 @@ class User extends ActiveRecord implements IdentityInterface
             ['email', 'email'],
            	['email', 'string', 'max' => 255],
            	
-           	['type', 'in', 'range' => array_keys($this->getUserType())],
+           	['type', 'in', 'range' => array_keys($this->getUserTypes())],
 			
 			[['change_password'], 'required', 'on' => 'update'],
 			[['change_password'], 'in', 'range' => [0, 1] , 'on' => 'update'],
@@ -252,6 +252,6 @@ class User extends ActiveRecord implements IdentityInterface
     }   
     
     public function afterFind() {
-    	$this->type = User::getUserType()[$this->type];
+    	$this->type = User::getUserTypes()[$this->type];
     } 
 }

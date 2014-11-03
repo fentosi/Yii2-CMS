@@ -79,11 +79,14 @@ class Answer extends \yii\db\ActiveRecord
     
     /**
      * @return \yii\db\ActiveQuery
+     *
+     * get the number of the votes for the answers of the poll
+     *
      */
     public function getVotesNum($id)
     {
     	return Vote::find()
-			->select(['answer','answer.id','COUNT(vote.id) AS cnt'])
+			->select(['answer','answer.id','COUNT(vote.id) AS votes_num'])
 			->joinWith('answer', true, 'RIGHT JOIN')
 			->where('poll_id = '.$id.' AND deleted_at IS NULL ')
 			->groupBy(['answer.id'])
@@ -94,13 +97,19 @@ class Answer extends \yii\db\ActiveRecord
 
     /**
      * @return integer
+     *
+     * get the number of the votes for the poll for calculating the percentage
+     *     
      */
-    public function getVotesAllNum($id)
+    public function getVotesNumAll($id)
     {
-    	return Vote::find()
+    	$all = Vote::find()
     		->joinWith('answer')
 			->where('poll_id = '.$id)
 			->count('1');
+		
+		//To avoid division by zero	
+		return $all == 0 ? 1 : $all;
     }  
 
       

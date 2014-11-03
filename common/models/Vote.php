@@ -19,7 +19,7 @@ use Yii;
 class Vote extends \yii\db\ActiveRecord
 {
 
-	public $cnt;
+	public $votes_num;
 	public $answer;
 
     /**

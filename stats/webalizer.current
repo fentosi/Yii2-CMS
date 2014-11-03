@@ -1,7 +1,7 @@
-# Webalizer V2.23-05 Incremental Data - 10/23/2014 06:41:58
-2014 10 23 6 41 58
-16938 3245 5 207 43 2 30444838 3498 34 0 0 0
-1 1 1135 1 23
+# Webalizer V2.23-05 Incremental Data - 10/29/2014 07:59:20
+2014 10 29 7 59 20
+16956 3253 5 207 43 2 30607581 3501 35 0 0 0
+1 18 1135 1 29
 274 46 471095 1 31 2 0 0
 2285 339 879650 1 302 2 0 0
 0 0 0 0 0 0 0 0
@@ -30,7 +30,7 @@
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
+18 8 162743 1 3 1 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 1211 187 2364049 221 0 0
@@ -40,7 +40,7 @@
 2561 489 4706511 562 0 0
 2115 258 2701305 337 0 0
 1174 185 1420832 195 0 0
-1632 289 1362421 263 0 0
+1650 297 1525164 266 0 0
 496 139 1077371 55 0 0
 683 109 1596095 132 0 0
 423 79 260864 71 0 0
@@ -60,7 +60,7 @@
 0
 0
 0
-3245
+3253
 0
 0
 0
@@ -71,14 +71,14 @@
 2
 94
 0
-12853
+12860
 0
 0
 5
 0
 0
 3
-224
+227
 0
 0
 0
@@ -114,13 +114,13 @@
 /backend/web/assets/580bfc34/langs/hu_HU.js
 0 76 0 5914 0 0 0 0
 /backend/web/css/jquery-ui.structure.min.css
-0 53 0 4740 0 0 0 0
+0 54 0 4740 0 0 0 0
 /backend/web/assets/6272e2dd/css/bootstrap.css
-0 375 0 97580 0 0 0 0
-/backend/web/assets/d89ccdde/select2.js
-0 81 0 63858 0 0 0 0
+0 376 0 97580 0 0 0 0
 /backend/web/assets/ddd72f0e/yii.js
 0 2 0 0 0 0 0 0
+/backend/web/assets/d89ccdde/select2.js
+0 81 0 63858 0 0 0 0
 /backend/web/assets/2ed0765f/typeahead.bundle.js
 0 4 0 27756 0 0 0 0
 /backend/web/assets/5f12cb6d/js/bootstrap.js
@@ -160,7 +160,7 @@
 /backend/web/form/create
 0 147 0 636165 1 0 0 0
 /backend/web/test.php
-0 1 0 15494 1 0 0 0
+0 1 0 15494 1 1 0 0
 /backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png
 1 1 0 301 0 0 0 0
 /backend/web/assets/580bfc34/plugins/visualchars/plugin.min.js
@@ -174,13 +174,13 @@
 /backend/web/assets/580bfc34/plugins/media/plugin.min.js
 0 77 0 7048 0 0 0 0
 /backend/web/css/jquery-ui.min.css
-0 53 0 7537 0 0 0 0
+0 54 0 15074 0 0 0 0
 /backend/web/content/tag-list
 0 23 0 1380 0 0 0 0
-/backend/web/assets/580bfc34/tinymce.min.js
-0 77 0 198033 0 0 0 0
 /frontend/web/assets/3611ffa6/jquery.js
 0 3 0 73267 0 0 0 0
+/backend/web/assets/580bfc34/tinymce.min.js
+0 77 0 198033 0 0 0 0
 /backend/web/assets/3ac585cd/yii.validation.js
 0 294 0 6780 0 0 0 0
 /backend/web/assets/580bfc34/plugins/template/plugin.min.js
@@ -204,11 +204,11 @@
 /backend/web/assets/580bfc34/plugins/textcolor/plugin.min.js
 0 72 0 1647 0 0 0 0
 /backend/web/css/site_add.css
-0 656 0 14860 0 0 0 0
+0 657 0 14860 0 0 0 0
 /array.php
 0 5 0 397 1 0 0 0
 /backend/web/js/scripts.js
-0 259 0 1201 0 0 0 0
+0 260 0 1201 0 0 0 0
 /backend/web/assets/2f63d519/css/datepicker-kv.css
 0 6 0 246 0 0 0 0
 /backend/web/assets/580bfc34/plugins/print/plugin.min.js
@@ -227,10 +227,10 @@
 0 2 0 0 0 0 0 0
 /backend/web/assets/580bfc34/skins/lightgray/fonts/tinymce.woff
 0 23 0 22992 0 0 0 0
-/backend/web/assets/580bfc34/plugins/wordcount/plugin.min.js
-0 72 0 527 0 0 0 0
 /frontend/web/assets/2ed0765f/typeahead.bundle.js
 0 3 0 27756 0 0 0 0
+/backend/web/assets/580bfc34/plugins/wordcount/plugin.min.js
+0 72 0 527 0 0 0 0
 /backend/web/user/delete
 0 6 0 277 0 0 0 0
 /backend/web/assets/a3f7ad07/plugins/print/plugin.min.js
@@ -255,22 +255,22 @@
 0 76 0 11522 0 0 0 0
 /backend/web/assets/580bfc34/plugins/table/plugin.min.js
 0 77 0 17006 0 0 0 0
-/backend/web/assets/bd210dd3/main.css
-0 4 0 4035 0 0 0 0
 /backend/web/assets/6a2c1005/yii.gridView.js
 0 38 0 1719 0 0 0 0
+/backend/web/assets/bd210dd3/main.css
+0 4 0 4035 0 0 0 0
 /backend/web/assets/9d036531/toolbar.css
 0 11 0 5349 0 0 0 0
 /backend/web/js/jquery.mjs.nestedSortable.js
-0 63 0 12136 0 0 0 0
+0 64 0 12136 0 0 0 0
 /backend/web/fonts/fontawesome-webfont.ttf
 0 1 0 112160 0 0 0 0
-/backend/web/assets/580bfc34/plugins/textpattern/plugin.min.js
-0 72 0 1186 0 0 0 0
-/backend/web/assets/6a2c1005/yii.validation.js
-0 243 0 2260 0 0 0 0
 /backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
 1 1 0 319 0 0 0 0
+/backend/web/assets/6a2c1005/yii.validation.js
+0 243 0 2260 0 0 0 0
+/backend/web/assets/580bfc34/plugins/textpattern/plugin.min.js
+0 72 0 1186 0 0 0 0
 /frontend/web/assets/6a2c1005/yii.js
 0 2 0 3182 0 0 0 0
 /backend/web/assets/2f63d519/js/bootstrap-datepicker.js
@@ -287,14 +287,14 @@
 0 5 0 11870 0 0 0 0
 /backend/web/user/index
 0 106 0 348431 6 2 0 0
-/backend/web/assets/5f12cb6d/fonts/glyphicons-halflings-regular.woff
-0 49 0 46640 0 0 0 0
 /frontend/web/assets/3ac585cd/yii.activeForm.js
 0 2 0 5183 0 0 0 0
+/backend/web/assets/5f12cb6d/fonts/glyphicons-halflings-regular.woff
+0 49 0 46640 0 0 0 0
 /backend/web/assets/6272e2dd/fonts/glyphicons-halflings-regular.woff
 0 81 0 93280 0 0 0 0
 /backend/web/css/site.css
-0 693 0 564 0 0 0 0
+0 694 0 1128 0 0 0 0
 /backend/web/assets/580bfc34/skins/lightgray/content.min.css
 0 12 0 1186 0 0 0 0
 /backend/web/content/index
@@ -314,11 +314,11 @@
 /backend/web/js/poll.js
 0 500 0 42917 0 0 0 0
 /backend/web/assets/3611ffa6/jquery.js
-0 382 0 293068 0 0 0 0
+0 383 0 366335 0 0 0 0
 /backend/web/assets/580bfc34/plugins/insertdatetime/plugin.min.js
 0 76 0 1727 0 0 0 0
 /backend/web/css/jquery-ui.theme.min.css
-0 53 0 2414 0 0 0 0
+0 54 0 2414 0 0 0 0
 /backend/web/assets/aae6b95e/js/kv-grid.js
 0 11 0 407 0 0 0 0
 /backend/web/assets/a3f7ad07/plugins/fullscreen/plugin.min.js
@@ -343,10 +343,10 @@
 1 1 0 7006 0 0 0 0
 /backend/web/tag/create
 0 10 0 18338 0 0 0 0
-/frontend/web/assets/6a2c1005/yii.validation.js
-0 2 0 2260 0 0 0 0
 /frontend/web/assets/13b05fef/typeahead.bundle.js
 0 2 0 0 0 0 0 0
+/frontend/web/assets/6a2c1005/yii.validation.js
+0 2 0 2260 0 0 0 0
 /backend/web/assets/580bfc34/plugins/save/plugin.min.js
 0 71 0 532 0 0 0 0
 /backend/web/assets/a3f7ad07/plugins/table/plugin.min.js
@@ -361,10 +361,10 @@
 0 4 0 2586 0 0 0 0
 /backend/web/assets/580bfc34/themes/modern/theme.min.js
 0 78 0 5256 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
-1 1 0 301 0 0 0 0
 /backend/web/js/jquery.sortable.min.js
 0 17 0 884 0 0 0 0
+/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
+1 1 0 301 0 0 0 0
 /backend/web/assets/580bfc34/plugins/directionality/plugin.min.js
 0 72 0 409 0 0 0 0
 /backend/web/assets/580bfc34/plugins/link/plugin.min.js
@@ -402,7 +402,7 @@
 /backend/web/assets/580bfc34/plugins/preview/plugin.min.js
 0 77 0 1406 0 0 0 0
 /backend/web/assets/6272e2dd/js/bootstrap.js
-0 369 0 37188 0 0 0 0
+0 370 0 37188 0 0 0 0
 /backend/web/assets/64bd04a3/main.css
 0 6 0 0 0 0 0 0
 /frontend/web/assets/bd210dd3/main.css
@@ -417,10 +417,10 @@
 0 77 0 5083 0 0 0 0
 /backend/web/assets/a3f7ad07/plugins/advlist/plugin.min.js
 0 4 0 620 0 0 0 0
-/backend/web/css/font-awesome.min.css
-0 605 0 10084 0 0 0 0
 /frontend/web/assets/80412463/gii.js
 0 1 0 2174 0 0 0 0
+/backend/web/css/font-awesome.min.css
+0 606 0 15126 0 0 0 0
 /backend/web/assets/f79d7616/jquery-ui.js
 0 2 0 112628 0 0 0 0
 /backend/web/assets/d89ccdde/select2_locale_hu.js
@@ -436,7 +436,7 @@
 /backend/web/content/update
 0 145 0 619054 0 0 0 0
 /backend/web/js/jquery-ui.min.js
-0 52 0 63671 0 0 0 0
+0 53 0 127342 0 0 0 0
 /backend/web/form/add-field
 0 87 0 83247 0 3 0 0
 /backend/web/user/update
@@ -454,17 +454,17 @@
 /backend/web/poll/delete
 0 14 0 7389 0 0 0 0
 /backend/web/debug/default/toolbar
-0 810 0 5022062 0 13 0 0
+0 811 0 5028263 0 13 0 0
 /backend/web/assets/580bfc34/plugins/visualblocks/plugin.min.js
 0 77 0 1048 0 0 0 0
 /frontend/web/assets/6272e2dd/js/bootstrap.js
 0 4 0 12396 0 0 0 0
 /backend/web/assets/d89ccdde/select2-kv.css
 0 82 0 5298 0 0 0 0
-/backend/web/gii/default/view
-0 9 0 49508 0 0 0 0
 /frontend/web/assets/a32198f0/main.css
 0 1 0 0 0 0 0 0
+/backend/web/gii/default/view
+0 9 0 49508 0 0 0 0
 /backend/web/assets/a3f7ad07/plugins/media/plugin.min.js
 0 4 0 3649 0 0 0 0
 /backend/web/gii
@@ -501,23 +501,23 @@
 0 240 0 5170 0 0 0 0
 /backend/web/tag/index
 0 39 0 125609 0 0 0 0
+/backend/web/
+0 820 0 2629507 18 10 0 0
 /backend/web/assets/d89ccdde/select2.png
 1 63 0 1226 0 0 0 0
-/backend/web/
-0 819 0 2626228 18 10 0 0
 /backend/web/assets/580bfc34/plugins/advlist/plugin.min.js
 0 78 0 1231 0 0 0 0
 /backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png
 1 1 0 247 0 0 0 0
 /backend/web/assets/3ac585cd/yii.js
-0 382 0 9546 0 0 0 0
+0 383 0 12728 0 0 0 0
 /backend/web/assets/3db8c80f/js/locales/bootstrap-datetimepicker.hu.js
 0 67 0 410 0 0 0 0
 # End Of Table - urls
 # -sites- (monthly)
 118.93.74.102
-0 4099 751 5540555 6 1414046518 0 0
-/backend/web/test.php
+0 4117 759 5703298 7 1414569560 0 0
+/backend/web/debug/default/toolbar
 118.93.77.78
 0 3717 994 11251316 10 1413177062 0 0
 /backend/web/debug/default/toolbar
@@ -533,8 +533,8 @@
 # End Of Table - sites (monthly)
 # -sites- (daily)
 118.93.74.102
-0 4 2 15524 2 1414046518 0 0
-/backend/web/test.php
+0 18 8 162743 1 1414569560 0 0
+/backend/web/debug/default/toolbar
 # End Of Table - sites (daily)
 # -referrers- 
 http://yii.lamirage.hu/frontend/web/assets/6272e2dd/css/bootstrap.css
@@ -552,7 +552,7 @@ http://yii.lamirage.hu/backend/web/gii
 http://yii.lamirage.hu/backend/web/user/
 1 85
 http://yii.lamirage.hu/backend/web/index.php
-1 4968
+1 4982
 http://yii.lamirage.hu/backend/web/user/view
 1 179
 http://yii.lamirage.hu/backend/web/user/index
@@ -561,10 +561,10 @@ http://yii.lamirage.hu/backend/web/gii/default/view
 1 16
 http://yii.lamirage.hu/backend/web/
 1 52
-- (Direct Request)
-0 508
 http://yii.lamirage.hu/backend/web/tag/index
 1 107
+- (Direct Request)
+0 512
 http://yii.lamirage.hu/backend/web/content/view
 1 205
 http://yii.lamirage.hu/backend/web/assets/f79d7616/themes/smoothness/jquery-ui.css
@@ -579,10 +579,10 @@ http://yii.lamirage.hu/backend/web/css/font-awesome.min.css
 1 50
 http://yii.lamirage.hu/backend/web/poll/create
 1 95
-http://yii.lamirage.hu/backend/web/poll/update
-1 668
 http://yii.lamirage.hu/backend/web/debug/default/view
 1 133
+http://yii.lamirage.hu/backend/web/poll/update
+1 668
 http://yii.lamirage.hu/backend/web/assets/5571bf3f/css/kv-widgets.css
 1 81
 http://yii.lamirage.hu/backend/web/css/jquery-ui.theme.min.css
@@ -628,7 +628,7 @@ http://yii.lamirage.hu/backend/web/parents/index
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36
 0 92
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0
-0 16846
+0 16864
 # End Of Table - agents
 # -search strings- 
 # End Of Table - search strings

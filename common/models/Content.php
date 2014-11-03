@@ -8,6 +8,8 @@ use yii\behaviors\TimestampBehavior;
 use yii\behaviors\SluggableBehavior;
 use yii\db\Expression;
 
+use common\models\ContentTag;
+
 
 
 /**
@@ -57,6 +59,10 @@ class Content extends \yii\db\ActiveRecord
 			1 => Yii::t('app', 'Open'),
 		];	
 	}
+	
+	/**
+	 * @inheritdoc
+	 */	
 	
 	public function behaviors() {
 			
@@ -145,6 +151,39 @@ class Content extends \yii\db\ActiveRecord
 				->viaTable('content_tag', ['content_id' => 'id'])
 				->select('tag.id, name')
 				->all();
+	}
+	
+	/**
+	 * Save the content with tags		
+	 * @return boolean
+	 */	
+	public function saveContent() {
+		$connection = \Yii::$app->db;
+		$transaction = $connection->beginTransaction();			
+
+		try {
+			
+			$save = true;
+						
+			if ($this->save()) {					
+				//delete all the tags related to the content from content_tag table 
+				//save all the tags to the content_tag table
+				if (!($save = contentTag::deleteContentTag($this->id) && $save = contentTag::saveAllContentTag($this->id, $this->tags))) {
+					Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
+				}
+			}
+				
+			if ($save) {
+				$transaction->commit();
+			} 
+				
+		} catch(Exception $e) {
+			$transaction->rollBack();
+			throw $e;
+		}
+		
+		return $save;	
+		
 	}
 	
 }

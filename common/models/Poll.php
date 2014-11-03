@@ -14,9 +14,7 @@ use yii\behaviors\TimestampBehavior;
  * @property string $question
  * @property integer $status
  * @property string $status_on
- * @property string $status_on_time
  * @property string $status_off
- * @property string $status_off_time
  * @property string $created_at
  * @property string $updated_at
  * @property string $deleted_at
@@ -56,7 +54,7 @@ class Poll extends \yii\db\ActiveRecord
         return [
             [['question'], 'required'],
             [['status'], 'integer'],
-            [['status_on', 'status_on_time', 'status_off', 'status_off_time', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
+            [['status_on', 'status_off', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
             [['question'], 'string', 'max' => 255],
         ];
     }
@@ -100,4 +98,29 @@ class Poll extends \yii\db\ActiveRecord
 			->asArray()
 			->all();
     }
+    
+    /**
+     * Delete the deleted answers from a poll
+     *  
+     * @param array $ans_ids the saved answers id	
+     * @return void
+     */    
+	public function deleteAnswers($ans_ids)
+    {
+    
+    	$del_ids = [];
+    	
+		//Delete the deleted answers
+		foreach ($this->getAnswersIds($this->id) as $ids) {
+			if (!in_array($ids['id'], $ans_ids)) {
+				$del_ids[] = $ids['id'];
+			}
+		}
+				
+		if (count($del_ids) > 0) {
+			Answer::updateAll(['deleted_at' => date('Y-m-d H:i:s')],['id' => $del_ids]);
+			Vote::deleteAll(['answer_id' => $del_ids]);
+		}
+    }
+    
 }

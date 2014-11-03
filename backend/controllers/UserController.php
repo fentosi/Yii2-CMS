@@ -65,7 +65,6 @@ class UserController extends Controller
 				
 		return $this->render('view', [
 			'model' => $this->findModel($id),
-			'user_type' => User::getUserType(),
 		]);
 	}
 
@@ -79,9 +78,12 @@ class UserController extends Controller
 		$model = new User(['scenario' => 'create']);
 		
 		if (Yii::$app->request->isPost) {
+			//Generate password
 			$model->setPassword($model->password_new);
-			$model->generateAuthKey();
 			
+			//Generate Auth Key
+			$model->generateAuthKey();
+	
 			if ($model->load(Yii::$app->request->post()) && $model->save()) {
 				return $this->redirect(['view', 'id' => $model->id]);
 			} else {
@@ -106,12 +108,14 @@ class UserController extends Controller
 		$model = $this->findModel($id);
 		
 		if (Yii::$app->request->isPost) {
+		
+			//if update, set the scenario for the validating rules
 			$model->setScenario(($model !== null ? 'update' : 'create'));
 		}
 
 		if ($model->load(Yii::$app->request->post())) {
 			
-			//update
+			//Change password, if needed
 			if ($model->change_password) {
 				$model->setPassword($model->password_new);
 			}
@@ -123,11 +127,10 @@ class UserController extends Controller
 			}
 		}
 		
-		$model->type = array_search($model->type, User::getUserType());
+		$model->type = array_search($model->type, User::getUserTypes());
 		 
 		return $this->render('update', [
 			'model' => $model,
-			'user_type' => User::getUserType(),
 		]);
 	}
 
@@ -145,8 +148,6 @@ class UserController extends Controller
 			Yii::$app->getSession()->setFlash('error', Yii::t('app/user', "You can't delete yourself!"));
 		} else {
 			$model->deleted_at = date('Y-m-d H:i:s');
-			
-			$model->type = array_search($model->type, User::getUserType());
 			
 			if (!$model->save()) {
 				Yii::$app->getSession()->setFlash('error', 'There is an error while deleting the data');
@@ -168,7 +169,6 @@ class UserController extends Controller
 	{
 		$model = User::find()
 			->where('deleted_at IS NULL AND id = '.$id)->one();
-			
 	
 		if ($model !== null) {
 			return $model;

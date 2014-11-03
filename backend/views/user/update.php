@@ -5,12 +5,13 @@ use yii\base\View;
 use yii\widgets\ActiveForm;
 use yii\bootstrap\Alert;
 
+use common\models\User;
+
 use backend\assets\UserAsset;
 UserAsset::register($this);
 
 /* @var $this yii\web\View */
 /* @var $model common\models\User */
-/* @var $user_type common\models\User\_user_type */
 
 $this->title = Yii::t('app', 'Update {modelClass}: ', [
     'modelClass' => Yii::t('app/user', 'User'),
@@ -34,7 +35,7 @@ if ($flash = Yii::$app->session->getFlash('error')) {
 			
 			<?= $form->field($model, 'email') ?>
 			
-			<?= $form->field($model, 'type')->dropDownList($user_type)  ?>
+			<?= $form->field($model, 'type')->dropDownList(User::getUserTypes())  ?>
 			
 			<?= $form->field($model, 'change_password')->dropDownList([Yii::t('app', 'No'), Yii::t('app', 'Yes')], ['onchange' => 'showHide("new-password", this.value)',])  ?>
 						

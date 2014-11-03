@@ -78,9 +78,12 @@ class Tag extends \yii\db\ActiveRecord
 	}
 	
 	/**
+	 *
+	 *	Get the tags whith like 
+	 *	
 	 * @return \yii\db\ActiveQuery
 	 */
-	public function getTagsLike($name = '', $as = '')
+	public function getTagsWithLike($name = '', $as = '')
 	{
     	return Tag::find()
 			->select(['id', 'name' . (!empty($as) ? ' AS '.$as : '')])
@@ -89,6 +92,13 @@ class Tag extends \yii\db\ActiveRecord
 			->asArray()
 			->all();
 	}	
+
+	/**
+	 *
+	 *	Get the existing tags
+	 *	 	
+	 * @return \yii\db\ActiveQuery
+	 */
 	
 	public function getTags($name = array()) {
 		return Tag::find()
@@ -98,6 +108,24 @@ class Tag extends \yii\db\ActiveRecord
 			->asArray()
 			->all();		
 	}
+	
+	/**
+	 * Create a Tag
+	 * @parameter name
+	 * @return mixed
+	 */
+	public function createTag($name)
+	{
+		$tag = new Tag();
+		$tag->name = $name;
+		$tag->slug = $name;
+	
+		if ($tag->save()) {
+			return $tag->id;
+		} else {
+			return false;
+		}
+	} 			
 
 	/**
 	 * @return \yii\db\ActiveQuery
@@ -106,4 +134,6 @@ class Tag extends \yii\db\ActiveRecord
 	{
 		return $this->hasMany(ContentTag::className(), ['tag_id' => 'id']);
 	}
+	
+	
 }

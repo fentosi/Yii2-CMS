@@ -42,7 +42,7 @@ if ($flash = Yii::$app->session->getFlash('error')) {
 				'attribute' => 'type', 
 				'vAlign' => 'middle',
 				'filterType' => GridView::FILTER_SELECT2,
-				'filter' => User::getUserType(), 
+				'filter' => User::getUserTypes(), 
 				'filterWidgetOptions' => [
 					'pluginOptions' => ['allowClear'=>true],
 				],

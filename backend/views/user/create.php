@@ -12,7 +12,6 @@ UserAsset::register($this);
 
 /* @var $this yii\web\View */
 /* @var $model common\models\User */
-/* @var $user_type common\models\User\_user_type */
 
 $this->title = Yii::t('app', 'Create {modelClass}', [
 	'modelClass' => Yii::t('app/user', 'User'),

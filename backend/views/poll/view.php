@@ -3,14 +3,15 @@
 use yii\helpers\Html;
 use yii\widgets\DetailView;
 
+use common\models\Answer;
+
 /* @var $this yii\web\View */
 /* @var $model common\models\Poll */
+/* @var $all count(common\models\Answer) */
 
 $this->title = $model->question;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/poll', 'Polls'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
-
-$all = $all == 0 ? 1 : $all;
 
 ?>
 <div class="poll-view">
@@ -42,19 +43,19 @@ $all = $all == 0 ? 1 : $all;
     			echo '
     	<tr>
     		<td>'.Html::encode($answer->answer).'</td>
-    		<td class="col-xs-2 text-center">'.Html::encode($answer->cnt).'</td>
-    		<td class="col-xs-2 text-center">'.Html::encode(round($answer->cnt/$all*100)).'%</td>
+    		<td class="col-xs-2 text-center">'.Html::encode($answer->votes_num).'</td>
+    		<td class="col-xs-2 text-center">'.Html::encode(round($answer->votes_num/$votes_num_all*100)).'%</td>
     	</tr>    			
     			';
     		}
     	?>
     	<tr>
     		<th><?= $model->getAttributeLabel('status_on')?></th>
-    		<td colspan="3"><?= (is_null($model->status_on) ? '<span class="not-set">' . Yii::t('yii', '(not set)') . '</span>' : $model->status_on . ' ' . $model->status_on_time ) ?></td>
+    		<td colspan="3"><?= (is_null($model->status_on) ? '<span class="not-set">' . Yii::t('yii', '(not set)') . '</span>' : $model->status_on) ?></td>
     	</tr>    	
     	<tr>
     		<th><?= $model->getAttributeLabel('status_off')?></th>
-    		<td colspan="3"><?= (is_null($model->status_off) ? '<span class="not-set">' . Yii::t('yii', '(not set)') . '</span>' : $model->status_off . ' ' . $model->status_off_time ) ?></td>
+    		<td colspan="3"><?= (is_null($model->status_off) ? '<span class="not-set">' . Yii::t('yii', '(not set)') . '</span>' : $model->status_off) ?></td>
     	</tr>    	
     </table>
 

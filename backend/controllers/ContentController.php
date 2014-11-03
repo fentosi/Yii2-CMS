@@ -4,7 +4,6 @@ namespace backend\controllers;
 
 use Yii;
 use common\models\Content;
-use common\models\ContentTag;
 use common\models\ContentSearch;
 use common\models\Tag;
 
@@ -72,13 +71,19 @@ class ContentController extends Controller
 	{
 		$model = new Content();
 
-		if ($model->load(Yii::$app->request->post()) && $model->save()) {
-			return $this->redirect(['view', 'id' => $model->id]);
-		} else {
-			return $this->render('create', [
-				'model' => $model,
-			]);
+		if ($model->load(Yii::$app->request->post())) {
+			
+			$model->user_id = Yii::$app->user->id;
+			
+			if ($model->saveContent()) {
+				return $this->redirect(['view', 'id' => $model->id]);
+			}
 		}
+		
+		return $this->render('create', [
+			'model' => $model,
+		]);
+		
 	}
 
 	/**
@@ -95,71 +100,10 @@ class ContentController extends Controller
 		$model->tags = implode(', ', ArrayHelper::map($model->getTags(), 'id', 'name'));
 
 		if ($model->load(Yii::$app->request->post())) {
-			
-
-			$connection = \Yii::$app->db;
-			$transaction = $connection->beginTransaction();			
-
-			try {
-			
-				$save = true;
-						
-				if ($model->save()) {
 				
-					$tags = explode(',', $model->tags);
-					
-					$exists_tags = array_flip(ArrayHelper::map(Tag::getTags($tags), 'id', 'name'));					
-					
-					//delete all the tags related to the content from content_tag table
-					if (contentTag::deleteContentTag($model->id)) {
-					
-						foreach($tags as $t) {
-							$tag_id = 0;
-							$t = trim($t);
-							if (mb_strlen($t) > 0) {
-								if (isset($exists_tags[$t]) && is_numeric($exists_tags[$t])) {
-									$tag_id = $exists_tags[$t];
-								} else {
-									$tag = new Tag();
-									$tag->name = $t;
-									$tag->slug = $t;
-									if ($tag->save()) {
-										$tag_id = $tag->id;
-									} else {
-										$save = false;
-										Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
-										break;
-									}
-								}
-								
-								if ($tag_id > 0) {
-									$contentTag = new ContentTag();
-									$contentTag->content_id = $model->id;
-									$contentTag->tag_id = $tag_id;
-									if (!$contentTag->save()) {
-										$save = false;
-										Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
-										break;
-									}
-								}
-							}	
-						}					
-					} else {
-						Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
-					}
-					
-				}
-				
-				if ($save) {
-					$transaction->commit();
-					return $this->redirect(['view', 'id' => $model->id]);
-				} 
-				
-			} catch(Exception $e) {
-		   		$transaction->rollBack();
-		   		throw $e;
-			}
-		
+			if ($model->saveContent()) {
+				return $this->redirect(['view', 'id' => $model->id]);
+			}		
 		}		
 		
 		return $this->render('update', [
@@ -189,28 +133,6 @@ class ContentController extends Controller
 		return $this->redirect(['index']);
 	}
 	
-	/*
-	public function actionTagList($search = null, $id = null) {
-	
-		$return = ['more' => false];
-	
-		if (Yii::$app->request->isAjax) {
-		
-			Yii::$app->response->format = Response::FORMAT_JSON;
-			
-			if (!is_null($search) && mb_strlen($search) >= 3) {
-				
-				$tags = Tag::getTags($search, 'text');
-				
-				$return['results'] = $tags;
-			
-			}
-		}
-		
-		return $return;
-	}
-	*/
-
 	/**
 	 * Finds the Content model based on its primary key value.
 	 * If the model is not found, a 404 HTTP exception will be thrown.
