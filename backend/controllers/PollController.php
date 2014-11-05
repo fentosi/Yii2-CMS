@@ -235,12 +235,16 @@ class PollController extends Controller
 		
 			$model->deleted_at = date('Y-m-d H:i:s');
 			try {
-				$model->save();
-				Answer::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'poll_id = '.$id);
+				if ($model->save()) {
+					Answer::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'poll_id = '.$id);
+					
+					//delete the votes from the vote table
+					$connection ->createCommand('DELETE vote FROM vote, answer, poll WHERE answer_id = answer.id AND poll_id = poll.id AND poll_id = '.$id)->execute();
 				
-				$connection ->createCommand('DELETE vote FROM vote, answer, poll WHERE answer_id = answer.id AND poll_id = poll.id AND poll_id = '.$id)->execute();
-				
-				$transaction->commit();
+					$transaction->commit();
+				} else {
+					Yii::$app->getSession()->setFlash('error', 'There is an error while deleting the data');
+				}
 				
 			} catch(Exception $e) {
 		   		$transaction->rollBack();

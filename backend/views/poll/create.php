@@ -7,7 +7,7 @@ use yii\bootstrap\Alert;
 /* @var $model common\models\Poll */
 
 
-$this->title = Yii::t('app', 'Create {modelClass}: ', [
+$this->title = Yii::t('app', 'Create {modelClass} ', [
 	'modelClass' => Yii::t('app/poll', 'Poll'),
 ]);
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app/poll', 'Poll'), 'url' => ['index']];

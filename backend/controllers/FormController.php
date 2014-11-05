@@ -216,11 +216,14 @@ class FormController extends Controller
 		
 			$model->deleted_at = date('Y-m-d H:i:s');
 			try {
-				$model->save();
+				if ($model->save()) {
+					//Delete all the fields
+					Field::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'form_id = '.$id);		
+					$transaction->commit();				
+				} else {
+					Yii::$app->getSession()->setFlash('error', 'There is an error while deleting the data');
+				}
 				
-				//Delete all the fields
-				Field::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'form_id = '.$id);		
-				$transaction->commit();
 				
 			} catch(Exception $e) {
 		   		$transaction->rollBack();

@@ -29,9 +29,7 @@ function addAnswer(btn) {
 	    			ans.val('');
 	    			ans.focus();
 	    			
-					$('.poll-sortable').nestedSortable({
-						'items': 'li',
-					});
+					$('.poll-sortable').sortable();
 	    			
 	    			renumberTable($('#table-poll-answers'));
 	    		} else {
