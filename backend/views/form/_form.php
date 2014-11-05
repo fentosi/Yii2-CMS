@@ -11,6 +11,7 @@ FormAsset::register($this);
 /* @var $this yii\web\View */
 /* @var $model common\models\Form */
 /* @var $form yii\widgets\ActiveForm */
+/* @var $fields array common\models\Field */
 ?>
 
 <div class="form-form">
@@ -56,7 +57,19 @@ FormAsset::register($this);
 		</div>
 
 
-			<ul class="sortable list-group dd-list" id="table-form-fields">
+			<ul class="form-sortable list-group dd-list" id="table-form-fields">
+			<?
+				foreach ($fields as $field) {
+				
+					if ($field->random_key == null) {
+						$field->generateRandomKey();
+					}
+					
+					echo $this->render('//field/_'.(in_array($field->type, ['select', 'radio', 'checkbox']) ? 'select' : $field->type), [
+						'model' => $field,
+					]);				
+				}
+			?>
 			</ul>
 
 
@@ -66,3 +79,10 @@ FormAsset::register($this);
 
     <?php ActiveForm::end(); ?>
 </div>
+
+<?
+	$this->registerJs( "
+	$('.form-sortable').sortable();
+	$('.btn').tooltip();
+	");
+?>

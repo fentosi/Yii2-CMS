@@ -13,6 +13,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
+use yii\helpers\Html;
+
 
 /**
  * FormController implements the CRUD actions for Form model.
@@ -76,14 +78,32 @@ class FormController extends Controller
 	public function actionCreate()
 	{
 		$model = new Form();
+		
+		$fields = [];
+		$save = true;			
 
-		if ($model->load(Yii::$app->request->post()) && $model->save()) {
-			return $this->redirect(['view', 'id' => $model->id]);
-		} else {
-			return $this->render('create', [
-				'model' => $model,
-			]);
-		}
+		$connection = \Yii::$app->db;
+		$transaction = $connection->beginTransaction();
+		
+		try {
+			if ($this->createUpdateModel($model, $fields)) {
+				$transaction->commit();
+				return $this->redirect(['view', 'id' => $model->id]);
+			} else {
+				$transaction->rollBack();
+			}		
+		
+		} catch(Exception $e) {
+   			$transaction->rollBack();
+	   		throw $e;
+		} 
+
+		
+		return $this->render('create', [
+			'model' => $model,
+			'fields' => $fields,
+		]);
+		
 	}
 
 	/**
@@ -95,15 +115,89 @@ class FormController extends Controller
 	public function actionUpdate($id)
 	{
 		$model = $this->findModel($id);
-
-		if ($model->load(Yii::$app->request->post()) && $model->save()) {
-			return $this->redirect(['view', 'id' => $model->id]);
-		} else {
-			return $this->render('update', [
-				'model' => $model,
-			]);
-		}
+		
+		$fields = [];
+		
+		$connection = \Yii::$app->db;
+		$transaction = $connection->beginTransaction();
+				
+		try {
+			//Delete all the fields
+			Field::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'form_id = '.$id);		
+		
+			if ($this->createUpdateModel($model, $fields)) {
+				$transaction->commit();
+				return $this->redirect(['view', 'id' => $model->id]);
+			} else {
+				$transaction->rollBack();
+			}		
+		
+		} catch(Exception $e) {
+   			$transaction->rollBack();
+	   		throw $e;
+		} 					
+		
+		
+		//If no fields, load it from the Form model
+		if (count($fields) == 0) {
+			$fields = $model->fields;
+		}		
+		
+		return $this->render('update', [
+			'model' => $model,
+			'fields' => $fields,
+		]);
+		
 	}
+	
+	/**
+	 * Create or update the Form model, save the Fields model which belongs to the Form
+	 * 
+	 * @param model fields by reference
+	 * @return boolean
+	 */	
+	
+	private function createUpdateModel(&$model, &$fields) {
+	
+		$save = true;
+		
+		$position = 0;
+
+		if ($model->load(Yii::$app->request->post())) {
+			
+			if ($model->save()) {
+				
+				$postFields = Yii::$app->request->post('Field');
+				$postValues = Yii::$app->request->post('Value');
+				
+				foreach($postFields as $key => $formField) {
+				
+					$field = new Field();
+					
+					$field->name = Html::encode(strip_tags($postFields[$key]['name']));
+					$field->type = $postFields[$key]['type'];
+					$field->position = ++$position;
+					$field->form_id = $model->id;
+					$field->status = $postFields[$key]['status'];
+					
+					$field->value = (isset($postValues[$key]) ? json_encode($postValues[$key]) : null);
+					
+					if ($field->validate()) {
+						$model->link('fields', $field);
+					} else {
+						$save = false;
+					}
+					
+					$fields[] = $field;
+				}
+				unset($formField, $key);		
+			}		
+		} else {
+			$save = false;
+		}
+					
+		return $save;	
+	}	
 
 	/**
 	 * Deletes an existing Form model.
@@ -113,7 +207,26 @@ class FormController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->findModel($id)->delete();
+		$model = $this->findModel($id);
+		
+		if ($model) {
+		
+			$connection = \Yii::$app->db;
+			$transaction = $connection->beginTransaction();		
+		
+			$model->deleted_at = date('Y-m-d H:i:s');
+			try {
+				$model->save();
+				
+				//Delete all the fields
+				Field::updateAll(['deleted_at' => date('Y-m-d H:i:s')],'form_id = '.$id);		
+				$transaction->commit();
+				
+			} catch(Exception $e) {
+		   		$transaction->rollBack();
+		   		throw $e;
+			}
+		}		
 
 		return $this->redirect(['index']);
 	}
@@ -134,7 +247,18 @@ class FormController extends Controller
 		}
 	}
 
+	/**
+	* Create a field for the form
+	*/
 	public function actionAddField() {
 		return Field::addField();
 	}
+
+	/**
+	* Create value for the field
+	*/	
+	public function actionAddFieldValue() {
+		return Field::addFieldValue();
+	}
+	
 }

@@ -28,7 +28,7 @@ class AppAsset extends AssetBundle
     public $js = [	
     	'js/scripts.js',
     	'js/jquery-ui.min.js',
-    	'js/jquery.mjs.nestedSortable.js',
+    	'js/jquery.sortable.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

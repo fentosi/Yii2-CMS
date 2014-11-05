@@ -3,7 +3,11 @@
 namespace common\models;
 
 use Yii;
-use common\models\field;
+use yii\base\Model;
+
+use yii\db\Expression;
+use yii\behaviors\TimestampBehavior;
+
 
 /**
  * This is the model class for table "form".
@@ -28,6 +32,21 @@ class Form extends \yii\db\ActiveRecord
 	{
 		return 'form';
 	}
+	
+    /**
+     * @inheritdoc
+     */    
+	public function behaviors() {
+			
+ 		return [
+	        	[
+	            'class' => TimestampBehavior::className(),
+	            'updatedAtAttribute' => 'updated_at',
+	            'value' => new Expression('NOW()'),
+				],
+			];			
+
+	}	
 	
 	/**
 	 * @inheritdoc
@@ -57,10 +76,15 @@ class Form extends \yii\db\ActiveRecord
 	}
 
 	/**
-	 * @return \yii\db\ActiveQuery
+	 * @return array
 	 */
 	public function getFields()
 	{
-		return $this->hasMany(Fields::className(), ['form_id' => 'id']);
+		return $this->hasMany(Field::className(), ['form_id' => 'id'])
+				->select('name, type, value, status')
+        		->where('deleted_at IS NULL')
+        		->orderBy('position');		
+		;
 	}
+		
 }

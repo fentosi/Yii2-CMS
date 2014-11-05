@@ -1,51 +1,46 @@
-# Webalizer V2.23-05 Incremental Data - 10/29/2014 07:59:20
-2014 10 29 7 59 20
-16956 3253 5 207 43 2 30607581 3501 35 0 0 0
-1 18 1135 1 29
-274 46 471095 1 31 2 0 0
-2285 339 879650 1 302 2 0 0
+# Webalizer V2.23-05 Incremental Data - 11/04/2014 07:49:35
+2014 11 4 7 49 35
+2059 538 1 119 26 1 4586740 511 4 0 0 0
+1 9 353 3 4
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-275 54 1060452 1 78 2 0 0
-948 156 2189572 2 212 3 0 0
-1290 306 3674909 1 364 3 0 0
-1283 388 3183433 1 457 4 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-1291 333 4860887 2 394 3 0 0
-445 73 681402 1 105 1 0 0
-1218 340 2680218 1 248 3 0 0
-771 187 2078954 1 208 4 0 0
-2713 265 2976354 1 321 1 0 0
-0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0
-267 43 383962 2 44 2 0 0
-2000 348 3708949 1 405 2 0 0
-1874 365 1599477 1 327 2 0 0
-4 2 15524 1 2 2 0 0
+774 199 2137874 1 173 2 0 0
+1285 339 2448866 1 338 2 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-18 8 162743 1 3 1 0 0
 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0
-1211 187 2364049 221 0 0
-1026 223 2453816 240 0 0
-1280 246 1940421 269 0 0
-2296 474 4435792 513 0 0
-2561 489 4706511 562 0 0
-2115 258 2701305 337 0 0
-1174 185 1420832 195 0 0
-1650 297 1525164 266 0 0
-496 139 1077371 55 0 0
-683 109 1596095 132 0 0
-423 79 260864 71 0 0
-72 18 432929 26 0 0
-117 31 521309 39 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0
+353 94 427718 73 0 0
+224 67 220639 65 0 0
+314 96 882380 96 0 0
+507 123 1596677 132 0 0
+201 79 409164 51 0 0
+0 0 0 0 0 0
+9 9 119219 2 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
@@ -54,31 +49,18 @@
 0 0 0 0 0 0
 0 0 0 0 0 0
 0 0 0 0 0 0
-186 92 686459 85 0 0
-757 221 2494345 265 0 0
-909 205 1990319 225 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+204 27 469695 38 0 0
+247 43 461248 54 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
 0
 0
 0
-3253
-0
-0
-0
-0
-0
-0
-0
-2
-94
-0
-12860
-0
-0
-5
-0
-0
-3
-227
+538
 0
 0
 0
@@ -87,548 +69,342 @@
 0
 0
 0
+16
+0
+1416
 0
 0
 0
 0
 0
-512
+0
+23
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+66
 0
 0
 0
 0
 0
 # -urls- 
+/backend/web/assets/f453bc41/select2-kv.css
+0 1 0 1766 0 0 0 0
 /frontend/web/assets/3ac585cd/yii.js
-0 4 0 3182 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/link/plugin.min.js
-0 4 0 1835 0 0 0 0
-/backend/web/assets/ddd72f0e/yii.validation.js
-0 2 0 0 0 0 0 0
-/backend/web/gii/model
-0 6 0 34980 0 0 0 0
-/frontend/web/assets/5f12cb6d/js/bootstrap.js
-0 2 0 0 0 0 0 0
+0 1 0 3182 0 0 0 0
+/backend/web/css/images/ui-bg_glass_100_fdf5ce_1x400.png
+1 2 0 348 0 0 0 0
 /backend/web/assets/3db8c80f/css/bootstrap-datetimepicker.css
-0 67 0 1512 0 0 0 0
+0 10 0 0 0 0 0 0
 /backend/web/assets/580bfc34/langs/hu_HU.js
-0 76 0 5914 0 0 0 0
+0 3 0 2957 0 0 0 0
 /backend/web/css/jquery-ui.structure.min.css
-0 54 0 4740 0 0 0 0
+0 80 0 0 0 0 0 0
 /backend/web/assets/6272e2dd/css/bootstrap.css
-0 376 0 97580 0 0 0 0
-/backend/web/assets/ddd72f0e/yii.js
-0 2 0 0 0 0 0 0
+0 80 0 0 0 0 0 0
 /backend/web/assets/d89ccdde/select2.js
-0 81 0 63858 0 0 0 0
-/backend/web/assets/2ed0765f/typeahead.bundle.js
-0 4 0 27756 0 0 0 0
-/backend/web/assets/5f12cb6d/js/bootstrap.js
-0 331 0 24792 0 0 0 0
-/backend/web/assets/580bfc34/plugins/emoticons/plugin.min.js
-0 1 0 543 0 0 0 0
+0 4 0 31929 0 0 0 0
 /backend/web/assets/580bfc34/plugins/paste/plugin.min.js
-0 78 0 11333 0 0 0 0
-/backend/web/assets/6811968f/css/kv-widgets.css
-0 225 0 578 0 0 0 0
+0 3 0 0 0 0 0 0
 /backend/web/assets/3ac585cd/yii.gridView.js
-0 65 0 5157 0 0 0 0
-/backend/web/poll/create
-0 5 0 20273 0 0 0 0
-/backend/web/assets/1203fca9/css/datepicker3.css
-0 225 0 6084 0 0 0 0
+0 5 0 1719 0 0 0 0
+/backend/web/css/images/ui-bg_highlight-soft_75_ffe45c_1x100.png
+1 3 0 328 0 0 0 0
 /frontend/web/assets/6272e2dd/css/bootstrap.css
-0 3 0 39032 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/insertdatetime/plugin.min.js
-0 4 0 867 0 0 0 0
-/frontend/web/assets/bd210dd3/logo.png
-1 3 0 13354 0 0 0 0
+0 1 0 19516 0 0 0 0
 /backend/web/assets/580bfc34/plugins/pagebreak/plugin.min.js
-0 72 0 640 0 0 0 0
+0 3 0 0 0 0 0 0
 /backend/web/assets/580bfc34/plugins/autolink/plugin.min.js
-0 78 0 1698 0 0 0 0
+0 3 0 854 0 0 0 0
 /backend/web/assets/5571bf3f/css/bootstrap-timepicker.css
-0 6 0 1984 0 0 0 0
+0 4 0 992 0 0 0 0
 /backend/web/assets/978690ee/css/kv-grid.css
-0 30 0 2640 0 0 0 0
+0 4 0 660 0 0 0 0
 /backend/web/assets/5571bf3f/js/bootstrap-timepicker.js
-0 6 0 4776 0 0 0 0
-/backend/web/gii/crud
-0 8 0 46920 0 0 0 0
-/backend/web/assets/a3f7ad07/skins/lightgray/content.min.css
-0 1 0 588 0 0 0 0
+0 4 0 4776 0 0 0 0
 /backend/web/form/create
-0 147 0 636165 1 0 0 0
-/backend/web/test.php
-0 1 0 15494 1 1 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png
-1 1 0 301 0 0 0 0
+0 49 0 188640 0 0 0 0
+/backend/web/form/update
+0 32 0 118341 0 0 0 0
 /backend/web/assets/580bfc34/plugins/visualchars/plugin.min.js
-0 72 0 608 0 0 0 0
-/backend/web/tag/view
-0 13 0 41258 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png
-1 1 0 374 0 0 0 0
-/backend/web/js/jquery.nestable.js
-0 10 0 3929 0 0 0 0
+0 3 0 608 0 0 0 0
 /backend/web/assets/580bfc34/plugins/media/plugin.min.js
-0 77 0 7048 0 0 0 0
+0 3 0 0 0 0 0 0
 /backend/web/css/jquery-ui.min.css
-0 54 0 15074 0 0 0 0
-/backend/web/content/tag-list
-0 23 0 1380 0 0 0 0
+0 80 0 0 0 0 0 0
 /frontend/web/assets/3611ffa6/jquery.js
-0 3 0 73267 0 0 0 0
+0 1 0 73267 0 0 0 0
 /backend/web/assets/580bfc34/tinymce.min.js
-0 77 0 198033 0 0 0 0
+0 3 0 102049 0 0 0 0
 /backend/web/assets/3ac585cd/yii.validation.js
-0 294 0 6780 0 0 0 0
-/backend/web/assets/580bfc34/plugins/template/plugin.min.js
-0 1 0 1713 0 0 0 0
+0 65 0 0 0 0 0 0
 /backend/web/assets/580bfc34/plugins/nonbreaking/plugin.min.js
-0 71 0 372 0 0 0 0
-/backend/web/assets/bd210dd3/gii.js
-0 4 0 4348 0 0 0 0
-/backend/web/user/create
-0 13 0 28331 0 0 0 0
-/backend/web/poll/add-answer
-0 37 0 14746 0 0 0 0
+0 3 0 372 0 0 0 0
+/backend/web/css/images/ui-icons_ffffff_256x240.png
+1 3 0 6299 0 0 0 0
 /backend/web/assets/5571bf3f/img/loading-plugin.gif
-1 81 0 1694 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/charmap/plugin.min.js
-0 4 0 2698 0 0 0 0
-/backend/web/assets/b71d616/jquery.js
-0 341 0 0 0 0 0 0
+1 4 0 847 0 0 0 0
 /backend/web/assets/580bfc34/plugins/hr/plugin.min.js
-0 72 0 191 0 0 0 0
+0 3 0 191 0 0 0 0
 /backend/web/assets/580bfc34/plugins/textcolor/plugin.min.js
-0 72 0 1647 0 0 0 0
+0 3 0 1647 0 0 0 0
 /backend/web/css/site_add.css
-0 657 0 14860 0 0 0 0
-/array.php
-0 5 0 397 1 0 0 0
+0 83 0 3023 0 0 0 0
 /backend/web/js/scripts.js
-0 260 0 1201 0 0 0 0
+0 79 0 0 0 0 0 0
 /backend/web/assets/2f63d519/css/datepicker-kv.css
-0 6 0 246 0 0 0 0
+0 3 0 246 0 0 0 0
 /backend/web/assets/580bfc34/plugins/print/plugin.min.js
-0 78 0 364 0 0 0 0
+0 3 0 182 0 0 0 0
 /backend/web/assets/d89ccdde/select2.css
-0 82 0 13048 0 0 0 0
+0 4 0 3262 0 0 0 0
 /backend/web/assets/3ac585cd/yii.activeForm.js
-0 285 0 15549 0 0 0 0
-/backend/web/assets/1203fca9/js/bootstrap-datepicker.js
-0 228 0 12056 0 0 0 0
+0 63 0 0 0 0 0 0
 /backend/web/assets/580bfc34/plugins/colorpicker/plugin.min.js
-0 72 0 614 0 0 0 0
-/backend/web/assets/6272e2dd/fonts/glyphicons-halflings-regular.ttf
-0 1 0 41280 0 0 0 0
-/backend/web/assets/ddd72f0e/yii.activeForm.js
-0 2 0 0 0 0 0 0
+0 3 0 614 0 0 0 0
 /backend/web/assets/580bfc34/skins/lightgray/fonts/tinymce.woff
-0 23 0 22992 0 0 0 0
-/frontend/web/assets/2ed0765f/typeahead.bundle.js
-0 3 0 27756 0 0 0 0
+0 2 0 7664 0 0 0 0
 /backend/web/assets/580bfc34/plugins/wordcount/plugin.min.js
-0 72 0 527 0 0 0 0
-/backend/web/user/delete
-0 6 0 277 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/print/plugin.min.js
-0 4 0 182 0 0 0 0
-/frontend/web/assets/5f12cb6d/css/bootstrap.css
-0 2 0 0 0 0 0 0
+0 3 0 527 0 0 0 0
 /backend/web/assets/580bfc34/plugins/charmap/plugin.min.js
-0 78 0 5414 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/contextmenu/plugin.min.js
-0 4 0 548 0 0 0 0
-/frontend/web/assets/80412463/main.css
-0 1 0 1345 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/visualblocks/plugin.min.js
-0 4 0 525 0 0 0 0
-/backend/web/tag/update
-0 28 0 96854 0 0 0 0
-/backend/web/assets/a3f7ad07/skins/lightgray/fonts/tinymce.woff
-0 1 0 7664 0 0 0 0
-/frontend/web/assets/6272e2dd/fonts/glyphicons-halflings-regular.woff
-0 1 0 23320 0 0 0 0
+0 3 0 2698 0 0 0 0
+/backend/web/css/images/ui-bg_gloss-wave_35_f6a828_500x100.png
+1 3 0 5815 0 0 0 0
 /backend/web/assets/580bfc34/skins/lightgray/skin.min.css
-0 76 0 11522 0 0 0 0
+0 3 0 5761 0 0 0 0
+/backend/web/form/add-field-value
+0 32 0 21736 0 0 0 0
 /backend/web/assets/580bfc34/plugins/table/plugin.min.js
-0 77 0 17006 0 0 0 0
-/backend/web/assets/6a2c1005/yii.gridView.js
-0 38 0 1719 0 0 0 0
-/backend/web/assets/bd210dd3/main.css
-0 4 0 4035 0 0 0 0
+0 3 0 9166 0 0 0 0
 /backend/web/assets/9d036531/toolbar.css
-0 11 0 5349 0 0 0 0
+0 2 0 1783 0 0 0 0
 /backend/web/js/jquery.mjs.nestedSortable.js
-0 64 0 12136 0 0 0 0
-/backend/web/fonts/fontawesome-webfont.ttf
-0 1 0 112160 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png
-1 1 0 319 0 0 0 0
-/backend/web/assets/6a2c1005/yii.validation.js
-0 243 0 2260 0 0 0 0
+0 25 0 0 0 0 0 0
+/backend/web/assets/f453bc41/select2.js
+0 1 0 32011 0 0 0 0
 /backend/web/assets/580bfc34/plugins/textpattern/plugin.min.js
-0 72 0 1186 0 0 0 0
-/frontend/web/assets/6a2c1005/yii.js
-0 2 0 3182 0 0 0 0
+0 3 0 1186 0 0 0 0
 /backend/web/assets/2f63d519/js/bootstrap-datepicker.js
-0 6 0 12056 0 0 0 0
-/backend/web/assets/6a2c1005/yii.js
-0 339 0 3182 0 0 0 0
+0 3 0 12056 0 0 0 0
 /backend/web/fonts/fontawesome-webfont.woff
-0 47 0 130904 0 0 0 0
-/backend/web/assets/aae6b95e/css/kv-grid.css
-0 11 0 1320 0 0 0 0
+0 17 0 65452 0 0 0 0
 /backend/web/assets/978690ee/js/kv-grid.js
-0 32 0 814 0 0 0 0
-/backend/web/user/
-0 5 0 11870 0 0 0 0
+0 4 0 0 0 0 0 0
 /backend/web/user/index
-0 106 0 348431 6 2 0 0
+0 6 0 28800 3 0 0 0
 /frontend/web/assets/3ac585cd/yii.activeForm.js
-0 2 0 5183 0 0 0 0
-/backend/web/assets/5f12cb6d/fonts/glyphicons-halflings-regular.woff
-0 49 0 46640 0 0 0 0
+0 1 0 5183 0 0 0 0
 /backend/web/assets/6272e2dd/fonts/glyphicons-halflings-regular.woff
-0 81 0 93280 0 0 0 0
+0 29 0 23320 0 0 0 0
 /backend/web/css/site.css
-0 694 0 1128 0 0 0 0
+0 80 0 0 0 0 0 0
 /backend/web/assets/580bfc34/skins/lightgray/content.min.css
-0 12 0 1186 0 0 0 0
+0 1 0 593 0 0 0 0
 /backend/web/content/index
-0 47 0 171502 0 0 0 0
+0 7 0 27432 0 0 0 0
 /backend/web/content/create
-0 31 0 137153 0 0 0 0
+0 5 0 27117 0 0 0 0
 /backend/web/assets/978690ee/js/kv-grid-export.js
-0 32 0 5426 0 0 0 0
-/frontend/web/assets/5f12cb6d/fonts/glyphicons-halflings-regular.woff
-0 2 0 23320 0 0 0 0
+0 4 0 2713 0 0 0 0
 /backend/web/poll/index
-0 16 0 67777 0 0 0 0
-/backend/web/assets/1203fca9/js/locales/bootstrap-datepicker.hu.js
-0 231 0 412 0 0 0 0
+0 12 0 53265 0 0 0 0
+/backend/web/css/images/ui-bg_glass_100_f6f6f6_1x400.png
+1 3 0 262 0 0 0 0
+/backend/web/assets/f453bc41/select2.css
+0 1 0 3272 0 0 0 0
 /backend/web/debug/default/view
-0 75 0 638766 0 1 0 0
+0 5 0 41210 0 0 0 0
 /backend/web/js/poll.js
-0 500 0 42917 0 0 0 0
+0 10 0 730 0 0 0 0
 /backend/web/assets/3611ffa6/jquery.js
-0 383 0 366335 0 0 0 0
+0 81 0 73267 0 0 0 0
 /backend/web/assets/580bfc34/plugins/insertdatetime/plugin.min.js
-0 76 0 1727 0 0 0 0
+0 3 0 867 0 0 0 0
 /backend/web/css/jquery-ui.theme.min.css
-0 54 0 2414 0 0 0 0
-/backend/web/assets/aae6b95e/js/kv-grid.js
-0 11 0 407 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/fullscreen/plugin.min.js
-0 4 0 649 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/code/plugin.min.js
-0 4 0 438 0 0 0 0
+0 80 0 0 0 0 0 0
 /backend/web/assets/3db8c80f/js/bootstrap-datetimepicker.js
-0 67 0 11993 0 0 0 0
+0 10 0 11993 0 0 0 0
 /frontend/web/assets/3ac585cd/yii.validation.js
-0 2 0 2260 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/jquery-ui.css
-0 2 0 8124 0 0 0 0
-/backend/web/assets/a3f7ad07/themes/modern/theme.min.js
-0 4 0 2651 0 0 0 0
+0 1 0 2260 0 0 0 0
 /backend/web/assets/d89ccdde/select2-spinner.gif
-1 26 0 3698 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/anchor/plugin.min.js
-0 4 0 339 0 0 0 0
+1 2 0 1849 0 0 0 0
 /backend/web/assets/580bfc34/plugins/searchreplace/plugin.min.js
-0 77 0 5155 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-icons_222222_256x240.png
-1 1 0 7006 0 0 0 0
-/backend/web/tag/create
-0 10 0 18338 0 0 0 0
-/frontend/web/assets/13b05fef/typeahead.bundle.js
-0 2 0 0 0 0 0 0
-/frontend/web/assets/6a2c1005/yii.validation.js
-0 2 0 2260 0 0 0 0
+0 3 0 2586 0 0 0 0
 /backend/web/assets/580bfc34/plugins/save/plugin.min.js
-0 71 0 532 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/table/plugin.min.js
-0 4 0 9166 0 0 0 0
-/backend/web/assets/aae6b95e/js/kv-grid-export.js
-0 11 0 2713 0 0 0 0
+0 3 0 532 0 0 0 0
 /backend/web/poll/update
-0 75 0 287974 1 0 0 0
+0 20 0 74648 0 0 0 0
 /backend/web/assets/d89ccdde/select2-kv.js
-0 81 0 1190 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/searchreplace/plugin.min.js
-0 4 0 2586 0 0 0 0
+0 4 0 595 0 0 0 0
 /backend/web/assets/580bfc34/themes/modern/theme.min.js
-0 78 0 5256 0 0 0 0
-/backend/web/js/jquery.sortable.min.js
-0 17 0 884 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png
-1 1 0 301 0 0 0 0
+0 3 0 2628 0 0 0 0
 /backend/web/assets/580bfc34/plugins/directionality/plugin.min.js
-0 72 0 409 0 0 0 0
+0 3 0 0 0 0 0 0
 /backend/web/assets/580bfc34/plugins/link/plugin.min.js
-0 77 0 3637 0 0 0 0
-/frontend/web/assets/b71d616/jquery.js
-0 2 0 0 0 0 0 0
-/backend/web/assets/a3f7ad07/skins/lightgray/skin.min.css
-0 1 0 6031 0 0 0 0
+0 3 0 1835 0 0 0 0
 /backend/web/assets/580bfc34/plugins/code/plugin.min.js
-0 76 0 853 0 0 0 0
+0 3 0 438 0 0 0 0
 /backend/web/js/form.js
-0 112 0 23452 0 0 0 0
-/frontend/web/assets/6a2c1005/yii.activeForm.js
-0 2 0 5170 0 0 0 0
+0 55 0 21282 0 0 0 0
 /frontend/web/
-0 31 0 91994 2 0 0 0
-/backend/web/assets/a3f7ad07/tinymce.min.js
-0 4 0 102049 0 0 0 0
+0 2 0 2851 1 0 0 0
+/backend/web/css/images/ui-icons_ef8c08_256x240.png
+1 1 0 4549 0 0 0 0
 /backend/web/content/view
-0 28 0 106795 0 0 0 0
+0 6 0 22949 0 0 0 0
 /backend/web/js/user.js
-0 234 0 1038 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/preview/plugin.min.js
-0 4 0 737 0 0 0 0
-/backend/web/assets/64bd04a3/toolbar.css
-0 6 0 0 0 0 0 0
+0 2 0 20 0 0 0 0
 /backend/web/assets/2f63d519/css/datepicker3.css
-0 6 0 3042 0 0 0 0
+0 3 0 3042 0 0 0 0
 /backend/web/form/index
-0 9 0 33240 0 0 0 0
+0 9 0 35594 0 0 0 0
 /backend/web/js/jquery.sortable.js
-0 486 0 5382 0 0 0 0
-/frontend/web/assets/80412463/logo.png
-1 1 0 6677 0 0 0 0
+0 56 0 1092 0 0 0 0
 /backend/web/assets/580bfc34/plugins/preview/plugin.min.js
-0 77 0 1406 0 0 0 0
+0 3 0 737 0 0 0 0
 /backend/web/assets/6272e2dd/js/bootstrap.js
-0 370 0 37188 0 0 0 0
-/backend/web/assets/64bd04a3/main.css
-0 6 0 0 0 0 0 0
-/frontend/web/assets/bd210dd3/main.css
-0 3 0 2690 0 0 0 0
+0 79 0 0 0 0 0 0
+/backend/web/assets/f453bc41/select2-kv.js
+0 1 0 595 0 0 0 0
+/backend/web/assets/f453bc41/select2.png
+1 1 0 613 0 0 0 0
 /backend/web/assets/2f63d519/js/locales/bootstrap-datepicker.hu.js
-0 6 0 412 0 0 0 0
+0 3 0 412 0 0 0 0
 /backend/web/assets/580bfc34/plugins/image/plugin.min.js
-0 72 0 2136 0 0 0 0
+0 3 0 2136 0 0 0 0
 /backend/web/user/view
-0 38 0 78188 0 0 0 0
+0 2 0 7248 0 0 0 0
 /backend/web/assets/580bfc34/plugins/lists/plugin.min.js
-0 77 0 5083 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/advlist/plugin.min.js
-0 4 0 620 0 0 0 0
-/frontend/web/assets/80412463/gii.js
-0 1 0 2174 0 0 0 0
+0 3 0 2667 0 0 0 0
 /backend/web/css/font-awesome.min.css
-0 606 0 15126 0 0 0 0
-/backend/web/assets/f79d7616/jquery-ui.js
-0 2 0 112628 0 0 0 0
-/backend/web/assets/d89ccdde/select2_locale_hu.js
-0 14 0 391 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-icons_454545_256x240.png
-1 1 0 7071 0 0 0 0
-/frontend/web/assets/a32198f0/logo.png
-1 1 0 0 0 0 0 0
-/backend/web/assets/6811968f/js/bootstrap-timepicker.js
-0 221 0 4776 0 0 0 0
-/backend/web/assets/bd210dd3/logo.png
-1 4 0 13354 0 0 0 0
+0 80 0 5042 0 0 0 0
 /backend/web/content/update
-0 145 0 619054 0 0 0 0
+0 3 0 17154 0 0 0 0
 /backend/web/js/jquery-ui.min.js
-0 53 0 127342 0 0 0 0
+0 80 0 0 0 0 0 0
 /backend/web/form/add-field
-0 87 0 83247 0 3 0 0
+0 53 0 63864 0 0 0 0
 /backend/web/user/update
-0 110 0 417780 1 0 0 0
+0 2 0 8663 0 0 0 0
 /backend/web/assets/5571bf3f/css/kv-widgets.css
-0 94 0 1156 0 0 0 0
+0 13 0 289 0 0 0 0
+/backend/web/form/view
+0 8 0 28461 0 0 0 0
 /backend/web/assets/580bfc34/plugins/fullscreen/plugin.min.js
-0 76 0 1291 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/autolink/plugin.min.js
-0 4 0 854 0 0 0 0
-/backend/web/assets/f79d7616/ui/i18n/datepicker-hu.js
-0 2 0 608 0 0 0 0
+0 3 0 649 0 0 0 0
 /backend/web/assets/580bfc34/plugins/anchor/plugin.min.js
-0 78 0 653 0 0 0 0
-/backend/web/poll/delete
-0 14 0 7389 0 0 0 0
+0 3 0 339 0 0 0 0
 /backend/web/debug/default/toolbar
-0 811 0 5028263 0 13 0 0
+0 162 0 1004602 0 3 0 0
 /backend/web/assets/580bfc34/plugins/visualblocks/plugin.min.js
-0 77 0 1048 0 0 0 0
+0 3 0 525 0 0 0 0
 /frontend/web/assets/6272e2dd/js/bootstrap.js
-0 4 0 12396 0 0 0 0
+0 1 0 12396 0 0 0 0
 /backend/web/assets/d89ccdde/select2-kv.css
-0 82 0 5298 0 0 0 0
-/frontend/web/assets/a32198f0/main.css
-0 1 0 0 0 0 0 0
-/backend/web/gii/default/view
-0 9 0 49508 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/media/plugin.min.js
-0 4 0 3649 0 0 0 0
-/backend/web/gii
-0 3 0 10971 0 0 0 0
-/backend/web/assets/5f12cb6d/css/bootstrap.css
-0 332 0 39032 0 0 0 0
-/backend/web/site/index
-0 1 0 894 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/paste/plugin.min.js
-0 4 0 6239 0 0 0 0
+0 4 0 1766 0 0 0 0
 /backend/web/assets/580bfc34/plugins/contextmenu/plugin.min.js
-0 78 0 1017 0 0 0 0
-/backend/web/css/images/ui-icons_222222_256x240.png
-1 15 0 6922 0 0 0 0
-/backend/web/assets/a3f7ad07/plugins/lists/plugin.min.js
-0 4 0 2667 0 0 0 0
+0 3 0 548 0 0 0 0
 /backend/web/assets/9d036531/main.css
-0 11 0 1881 0 0 0 0
-/frontend/web/assets/bd210dd3/gii.js
-0 3 0 2174 0 0 0 0
-/backend/web/assets/6811968f/css/bootstrap-timepicker.css
-0 216 0 992 0 0 0 0
-/backend/web/site/login
-0 19 0 70394 0 0 0 0
-/frontend/web/assets/a32198f0/gii.js
-0 1 0 0 0 0 0 0
+0 2 0 627 0 0 0 0
+/backend/web/css/images/ui-bg_glass_65_ffffff_1x400.png
+1 2 0 207 0 0 0 0
 /frontend/web/css/site.css
-0 4 0 1692 0 0 0 0
-/backend/web/assets/1203fca9/css/datepicker-kv.css
-0 224 0 492 0 0 0 0
+0 1 0 564 0 0 0 0
 /backend/web/poll/view
-0 33 0 117073 1 0 0 0
-/backend/web/assets/6a2c1005/yii.activeForm.js
-0 240 0 5170 0 0 0 0
+0 9 0 32692 0 0 0 0
+/backend/web/css/images/ui-bg_highlight-soft_100_eeeeee_1x100.png
+1 3 0 278 0 0 0 0
 /backend/web/tag/index
-0 39 0 125609 0 0 0 0
+0 3 0 12034 0 0 0 0
 /backend/web/
-0 820 0 2629507 18 10 0 0
+0 1 0 3274 0 0 0 0
 /backend/web/assets/d89ccdde/select2.png
-1 63 0 1226 0 0 0 0
+1 4 0 613 0 0 0 0
 /backend/web/assets/580bfc34/plugins/advlist/plugin.min.js
-0 78 0 1231 0 0 0 0
-/backend/web/assets/f79d7616/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png
-1 1 0 247 0 0 0 0
+0 3 0 620 0 0 0 0
 /backend/web/assets/3ac585cd/yii.js
-0 383 0 12728 0 0 0 0
+0 81 0 0 0 0 0 0
 /backend/web/assets/3db8c80f/js/locales/bootstrap-datetimepicker.hu.js
-0 67 0 410 0 0 0 0
+0 10 0 410 0 0 0 0
 # End Of Table - urls
 # -sites- (monthly)
 118.93.74.102
-0 4117 759 5703298 7 1414569560 0 0
-/backend/web/debug/default/toolbar
-118.93.77.78
-0 3717 994 11251316 10 1413177062 0 0
-/backend/web/debug/default/toolbar
-118.93.64.173
-0 5673 983 10329906 11 1413772425 0 0
-/backend/web/
-118.93.91.128
-0 3175 471 2851966 5 1412665887 0 0
-/backend/web/
-118.93.88.151
-0 274 46 471095 2 1412130862 0 0
-/backend/web/
+0 2059 538 4586740 4 1415087374 0 0
+/frontend/web/
 # End Of Table - sites (monthly)
 # -sites- (daily)
 118.93.74.102
-0 18 8 162743 1 1414569560 0 0
-/backend/web/debug/default/toolbar
+0 1285 339 2448866 2 1415087374 0 0
+/frontend/web/
 # End Of Table - sites (daily)
 # -referrers- 
-http://yii.lamirage.hu/frontend/web/assets/6272e2dd/css/bootstrap.css
-1 1
-http://yii.lamirage.hu/backend/web/gii/model
-1 13
 http://yii.lamirage.hu/backend/web/assets/6272e2dd/css/bootstrap.css
-1 82
-http://yii.lamirage.hu/backend/web/tag/update
-1 197
+1 29
 http://yii.lamirage.hu/backend/web/poll/view
-1 213
-http://yii.lamirage.hu/backend/web/gii
-1 23
-http://yii.lamirage.hu/backend/web/user/
-1 85
-http://yii.lamirage.hu/backend/web/index.php
-1 4982
+1 90
 http://yii.lamirage.hu/backend/web/user/view
-1 179
+1 43
 http://yii.lamirage.hu/backend/web/user/index
-1 791
-http://yii.lamirage.hu/backend/web/gii/default/view
-1 16
+1 69
 http://yii.lamirage.hu/backend/web/
-1 52
-http://yii.lamirage.hu/backend/web/tag/index
-1 107
+1 2
 - (Direct Request)
-0 512
+0 56
+http://yii.lamirage.hu/backend/web/tag/index
+1 6
 http://yii.lamirage.hu/backend/web/content/view
-1 205
-http://yii.lamirage.hu/backend/web/assets/f79d7616/themes/smoothness/jquery-ui.css
-1 7
-http://yii.lamirage.hu/backend/web/gii/crud
-1 20
+1 41
 http://yii.lamirage.hu/backend/web/poll/index
-1 75
-http://yii.lamirage.hu/backend/web/assets/a3f7ad07/skins/lightgray/skin.min.css
-1 1
+1 57
 http://yii.lamirage.hu/backend/web/css/font-awesome.min.css
-1 50
-http://yii.lamirage.hu/backend/web/poll/create
-1 95
+1 17
 http://yii.lamirage.hu/backend/web/debug/default/view
-1 133
+1 13
 http://yii.lamirage.hu/backend/web/poll/update
-1 668
+1 223
 http://yii.lamirage.hu/backend/web/assets/5571bf3f/css/kv-widgets.css
-1 81
+1 4
 http://yii.lamirage.hu/backend/web/css/jquery-ui.theme.min.css
-1 16
-http://yii.lamirage.hu/frontend/web/assets/5f12cb6d/css/bootstrap.css
-1 2
+1 20
 http://yii.lamirage.hu/backend/web/assets/d89ccdde/select2.css
-1 89
+1 6
 http://yii.lamirage.hu/backend/web/content/index
-1 384
-http://yii.lamirage.hu/backend/web/assets/5f12cb6d/css/bootstrap.css
-1 49
+1 28
 http://yii.lamirage.hu/frontend/web/index.php
-1 85
-http://yii.lamirage.hu/backend/web/site/index
-1 2
-http://yii.lamirage.hu/backend/web/site/login
-1 98
-http://yii.lamirage.hu/backend/web/content/update
-1 3629
-http://yii.lamirage.hu/backend/web/tag/view
-1 51
-http://yii.lamirage.hu/backend/web/form/index
-1 146
-http://yii.lamirage.hu/backend/web/form/create
-1 2047
-http://yii.lamirage.hu/backend/web/poll/delete
-1 16
-http://yii.lamirage.hu/backend/web/user/create
-1 49
-http://yii.lamirage.hu/backend/web/user/update
-1 751
-http://yii.lamirage.hu/backend/web/assets/580bfc34/skins/lightgray/skin.min.css
-1 23
-http://yii.lamirage.hu/backend/web/content/create
-1 844
-http://yii.lamirage.hu/backend/web/tag/create
-1 86
-http://yii.lamirage.hu/backend/web/parents/index
+1 8
+http://yii.lamirage.hu/backend/web/assets/f453bc41/select2.css
 1 1
+http://yii.lamirage.hu/backend/web/form/view
+1 70
+http://yii.lamirage.hu/backend/web/content/update
+1 73
+http://yii.lamirage.hu/backend/web/form/index
+1 22
+http://yii.lamirage.hu/backend/web/form/create
+1 692
+http://yii.lamirage.hu/backend/web/user/update
+1 38
+http://yii.lamirage.hu/backend/web/form/update
+1 339
+http://yii.lamirage.hu/backend/web/assets/580bfc34/skins/lightgray/skin.min.css
+1 2
+http://yii.lamirage.hu/backend/web/content/create
+1 110
 # End Of Table - referrers
 # -agents- 
-Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.104 Safari/537.36
-0 92
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0
-0 16864
+0 2059
 # End Of Table - agents
 # -search strings- 
 # End Of Table - search strings

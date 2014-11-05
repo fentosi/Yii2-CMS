@@ -2,9 +2,9 @@
 
 use yii\helpers\Html;
 
-
 /* @var $this yii\web\View */
 /* @var $model common\models\Form */
+/* @var $fields array common\models\Field */
 
 $this->title = Yii::t('app', 'Create {modelClass}', [
     'modelClass' => Yii::t('app/form', 'Form'),
@@ -18,6 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?= $this->render('_form', [
         'model' => $model,
+        'fields' => $fields,
     ]) ?>
 
 </div>

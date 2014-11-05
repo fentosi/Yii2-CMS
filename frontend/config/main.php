@@ -28,6 +28,23 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+	    'i18n' => [
+	        'translations' => [
+	            'app*' => [
+	                'class' => 'yii\i18n\PhpMessageSource',
+	                'basePath' => '@frontend/messages',
+	                'sourceLanguage' => 'en',
+	                'fileMap' => [
+						'app' => 'app.php',
+						'app/tag' => 'tag.php',
+						'app/poll' => 'poll.php',
+						'app/user' => 'user.php',
+						'app/form' => 'form.php',
+						'app/content' => 'content.php',
+	                ],
+	            ],
+	        ],
+	    ],        
     ],
     'params' => $params,
 ];

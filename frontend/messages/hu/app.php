@@ -1,0 +1,26 @@
+<?php
+
+return [
+	'Submit' => 'Mentés',
+	'Update {modelClass}: ' => ' {modelClass} szerkesztése: ',
+	'Create {modelClass}' => ' {modelClass} létrehozása ',
+	'Create' => 'Mentés',
+	'Update' => 'Szerkesztés',
+	'Delete' => 'Törlés',
+	'Created at' => 'Létrehozva',
+	'Updated at' => 'Utoljára módosítva',
+	'Pick a date' => 'Válassz egy dátumot',
+	'Login' => 'Belépés',	
+	'Logout' => 'Kilépés',	
+	'Yes' => 'Igen',	
+	'No' => 'Nem',	
+	'Now' => 'Most',	
+	'Open' => 'Nyitva',	
+	'Close' => 'Zárva',	
+	'' => '',	
+	'' => '',	
+	'' => '',	
+	'' => '',	
+	'' => '',	
+	'' => '',		
+];

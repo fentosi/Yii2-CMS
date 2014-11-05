@@ -24,6 +24,8 @@ use yii\base\Controller;
  */
 class Field extends \yii\db\ActiveRecord
 {
+	public $random_key;
+
 	/**
 	 * @inheritdoc
 	 */
@@ -82,13 +84,52 @@ class Field extends \yii\db\ActiveRecord
 			'deleted_at' => Yii::t('app/form', 'Deleted At'),
 		];
 	}
+	
+	/**
+     * Generates random key for the field
+     */
+    public function generateRandomKey()
+    {
+		$this->random_key = Yii::$app->security->generateRandomString(6);
+    }	
+	
+	/**
+	 * Add a value input to the field
+	 * @return array
+	 */	
+
+	public static function addFieldValue() {
+		$request = Yii::$app->request;
+		
+		if ($request->isAjax) {
+			Yii::$app->response->format = Response::FORMAT_JSON;
+		}
+		
+		//Load the _value view
+		$html = Yii::$app->controller->renderPartial('//field/_value', [
+			'value' => $request->post('value'),
+			'key' => $request->post('key'),
+			'status' => 1,
+		]);
+				
+		return [
+			'ok' => true,
+			'text' => $html,
+		];
+	}
+	
+	
+	/**
+	 * Add a field to the form	
+	 * @return array
+	 */	
 
 	public static function addField() {
 		$request = Yii::$app->request;
 		
 		$save = true;
 		$error = [];
-		$text = '';
+		$html = '';
 		
 		if ($request->isAjax) {
 			Yii::$app->response->format = Response::FORMAT_JSON;
@@ -96,14 +137,24 @@ class Field extends \yii\db\ActiveRecord
 		
 		$model = new Field();
 		
+		//set scenario for the rule
 		$model->setScenario('add');
 		
+		//generate a random key, which connects the data together in the form
+		$model->generateRandomKey();
+		
 		if ($model->load($request->post())) {
+			
+			//Set default status to visible
+			$model->status = 1;
+		
 			if ($model->validate()) {
 						
-				$text = Yii::$app->controller->renderPartial('//field/_'.$model->type, [
+				//load the view, depends on the type
+				$html = Yii::$app->controller->renderPartial('//field/_'.(in_array($model->type, ['select', 'radio', 'checkbox']) ? 'select' : $model->type), [
 					'model' => $model,
 				]);
+				
 			} else {
 				$save = false;
 				$error = $model->errors;
@@ -116,7 +167,7 @@ class Field extends \yii\db\ActiveRecord
 		return [
 			'ok' => $save,
 			'error' => $error,
-			'text' => $text,
+			'text' => $html,
 		];
 	}
 

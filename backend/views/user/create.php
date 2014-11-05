@@ -34,7 +34,7 @@ if ($flash = Yii::$app->session->getFlash('error')) {
 			
 			<?= $form->field($model, 'email') ?>
 			
-			<?= $form->field($model, 'type')->dropDownList(User::getUserType())  ?>
+			<?= $form->field($model, 'type')->dropDownList(User::getUserTypes())  ?>
 			
 			<?= $form->field($model, 'password_new', ['enableClientValidation' => false])->passwordInput() ?>
 				

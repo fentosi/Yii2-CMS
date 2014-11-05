@@ -29,7 +29,7 @@ function addField(btn) {
 	    			$('#field-name').val('');
 	    			$('#field-type').val('');
 	    			
-	    			makeSortable($('.sortable'));
+	    			$('.form-sortable').sortable();
 
 	    			$('.btn').tooltip();
 	    		} else {
@@ -43,42 +43,38 @@ function addField(btn) {
 	}
 }
 
-function addFieldValue(btn) {
-	html = '<li>'+
-'	<div class="row">'+
-'		<div class="col-xs-9">'+
-'			<input type="text" value="" class="form-control input-sm">'+
-'		</div>'+
-'		<div class="col-xs-3">'+
-'			<span onclick="" class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="L‡that—"><i class="glyphicon glyphicon-eye-open"></i></span>'+
-'			<span onclick="removeFieldValue(this);" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="TšrlŽs"><i class="glyphicon glyphicon-remove"></i></span>'+
-'		</div>'+
-'	</div>'+
-'</li>';
-
-	$('#table-form-fields-values').append(html);
+function addFieldValue(btn, key) {
+	row = $(btn).parents('.list-group-item');
+	field = row.find('.add-field-value');
 	
-	makeSortable($('.sortable'));
-}
-
-function makeSortable(elem) {
-	elem.nestedSortable({
-				forcePlaceholderSize: true,
-				forceHelperSize: true,
-				handle: 'div',
-				listType: 'ul',
-				items: 'li',
-				opacity: .6,
-				placeholder: 'placeholder',
-				tolerance: 'pointer',
-				toleranceElement: '> div',
-				maxLevels: 4,
-				disableParentChange: true,
-				protectRoot: true,
-				isTree: false,
-				expandOnHover: 700,
-				startCollapsed: false
-			});
+	if ($(btn).find('i').hasClass('glyphicon-plus')) {
+		$.ajax({
+			url: 'add-field-value',
+			type: 'post',
+			async: true,
+			cache: false,
+			dataType: 'json',
+			data: {
+				value: field.val(),
+				key: key,
+			},
+			beforeSend: function () {
+				field.prop('disabled', true);
+				$(btn).find('i').removeClass('glyphicon-plus').addClass('fa fa-spinner fa-spin');
+			},
+			complete: function () {
+				field.prop('disabled', false);
+				$(btn).find('i').removeClass('fa fa-spinner fa-spin').addClass('glyphicon-plus');
+			},
+			success: function(r){
+	    		if (r.ok && r.text.trim() != '') {
+					field.val('');
+					row.find('.field-value-sortable').append(r.text);
+	    			$('.btn').tooltip();
+	    		}
+	  		}
+	  	});
+	}	
 }
 
 function removeField(btn) {
@@ -90,5 +86,23 @@ function removeField(btn) {
 			}
 			
 		}	
+	}
+}
+
+function changeStatus(btn) {
+	status = $(btn).parent().find('.form-status').val();
+	
+	switch(status) {
+		case '0':
+			$(btn).parent().find('.form-status').val('1');
+			$(btn).removeClass('btn-default').addClass('btn-primary');
+			$(btn).find('i').removeClass('glyphicon-eye-close').addClass('glyphicon-eye-open');
+		break;
+	
+		case '1':
+			$(btn).parent().find('.form-status').val('0');
+			$(btn).removeClass('btn-primary').addClass('btn-default');
+			$(btn).find('i').removeClass('glyphicon-eye-open').addClass('glyphicon-eye-close');
+		break;
 	}
 }

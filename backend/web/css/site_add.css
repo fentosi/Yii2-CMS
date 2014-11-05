@@ -8,12 +8,20 @@
 	width: 50%;
 }
 
+.ml6 {
+	margin-left: 6px;
+}
+
+.mr6 {
+	margin-right: 6px;
+}
+
 .valign-m {
 	display: table-cell;
 	vertical-align: middle !important;
 }
 
-.poll-sortable .sortable-placeholder {
+.sortable-placeholder {
     background-color: #fff;
     display: block;
     margin-bottom: -1px;
@@ -28,7 +36,7 @@
     padding: 5px 10px;
 }   
 
-ul.sortable li {
+.sortable li, .poll-sortable li, .form-sortable li  {
 	cursor:move;
 }
 
@@ -39,21 +47,14 @@ ul.sortable li {
 	text-overflow: ellipsis;
 	height: 30px !important;
 }
-
-
 				
 .placeholder {
 	outline: 1px dashed #ccc;
 	list-style: none;
 	height: 44px;
 }
-		
-.mjs-nestedSortable-error {
-	background: #fbe3e4;
-	border-color: transparent;
-}
-		
-li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
-	border-color: #999;
+
+.field-value-sortable, .field-value-sortable li {
+	margin: 6px 0px;
 }
 

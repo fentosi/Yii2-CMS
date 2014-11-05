@@ -5157,3 +5157,526 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1413850623.8847
     'REQUEST_TIME' => 1413850623
 ]
+2014-11-04 06:49:26 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:70
+2014-11-04 06:49:26 [118.93.74.102][][-][info][application] $_COOKIE = [
+    '_identity' => '069c68762554b0ae0b6755ba5fab903a74c0a7ca5edaf70b8fd3f3d0b944abbds:46:\"[1,\"Q84o6d0opfm2CzsYSYlO1vr_6Bj_Fgs6\",2592000]\";'
+    'PHPSESSID' => '2ng9fujlmhaegt0ctn9bgj84f4'
+    '_csrf' => 'f594f01d3a47125ed8756580b8da19c29c68f92494e6ac061a11dfdcdf0fcbf3s:32:\"SQnEbYqFGSRXawpnHt68OFZ89ggXXzor\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=069c68762554b0ae0b6755ba5fab903a74c0a7ca5edaf70b8fd3f3d0b944abbds%3A46%3A%22%5B1%2C%22Q84o6d0opfm2CzsYSYlO1vr_6Bj_Fgs6%22%2C2592000%5D%22%3B; PHPSESSID=2ng9fujlmhaegt0ctn9bgj84f4; _csrf=f594f01d3a47125ed8756580b8da19c29c68f92494e6ac061a11dfdcdf0fcbf3s%3A32%3A%22SQnEbYqFGSRXawpnHt68OFZ89ggXXzor%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '53167'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415083766.2251
+    'REQUEST_TIME' => 1415083766
+]
+2014-11-04 06:49:35 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:132
+2014-11-04 06:49:34 [118.93.74.102][][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    '_identity' => '069c68762554b0ae0b6755ba5fab903a74c0a7ca5edaf70b8fd3f3d0b944abbds:46:\"[1,\"Q84o6d0opfm2CzsYSYlO1vr_6Bj_Fgs6\",2592000]\";'
+    'PHPSESSID' => '2ng9fujlmhaegt0ctn9bgj84f4'
+    '_csrf' => 'f3d247867e8f2b1b449eb7cb5d309b3c705cc0a9e9c2445c2f188b7cc0db79c1s:32:\"X4W9BTcMIhTfYOZJkXRBMMiOquJIqRCo\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => '_identity=069c68762554b0ae0b6755ba5fab903a74c0a7ca5edaf70b8fd3f3d0b944abbds%3A46%3A%22%5B1%2C%22Q84o6d0opfm2CzsYSYlO1vr_6Bj_Fgs6%22%2C2592000%5D%22%3B; PHPSESSID=2ng9fujlmhaegt0ctn9bgj84f4; _csrf=f3d247867e8f2b1b449eb7cb5d309b3c705cc0a9e9c2445c2f188b7cc0db79c1s%3A32%3A%22X4W9BTcMIhTfYOZJkXRBMMiOquJIqRCo%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/index.php'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '56681'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415083774.7887
+    'REQUEST_TIME' => 1415083774
+]
+2014-11-05 01:32:06 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:70
+2014-11-05 01:32:06 [118.93.74.102][][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'laum7ft1m8vl962lebb7985qs7'
+    '_csrf' => '30cfd47630d67cba6ee73f2ea4d6dc5774de0ac3b9e94835a39ce5d17254f2c6s:32:\"j_IrW217nu4FJ95MA6xF1nbdnHscWrZ1\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=laum7ft1m8vl962lebb7985qs7; _csrf=30cfd47630d67cba6ee73f2ea4d6dc5774de0ac3b9e94835a39ce5d17254f2c6s%3A32%3A%22j_IrW217nu4FJ95MA6xF1nbdnHscWrZ1%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '59370'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151126.069
+    'REQUEST_TIME' => 1415151126
+]
+2014-11-05 01:32:08 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:132
+2014-11-05 01:32:08 [118.93.74.102][][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'laum7ft1m8vl962lebb7985qs7'
+    '_csrf' => 'a0b5b4fad62dc22eb810dd8f0dfd31514b4d02b24d8a3030aa2fd059aceef658s:32:\"SiR-EavjARzsEJBdqsHj-WUiysQNO46r\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=laum7ft1m8vl962lebb7985qs7; _csrf=a0b5b4fad62dc22eb810dd8f0dfd31514b4d02b24d8a3030aa2fd059aceef658s%3A32%3A%22SiR-EavjARzsEJBdqsHj-WUiysQNO46r%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '59370'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151128.1876
+    'REQUEST_TIME' => 1415151128
+]
+2014-11-05 01:32:38 [118.93.74.102][][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unable to locate message source for category 'app/user'.' in /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/i18n/I18N.php:200
+Stack trace:
+#0 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/i18n/I18N.php(88): yii\i18n\I18N->getMessageSource('app/user')
+#1 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/BaseYii.php(498): yii\i18n\I18N->translate('app/user', 'Name', Array, 'en-US')
+#2 /var/www/clients/client1/web241/web/common/models/User.php(116): yii\BaseYii::t('app/user', 'Name')
+#3 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1448): common\models\User->attributeLabels()
+#4 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/validators/Validator.php(346): yii\db\BaseActiveRecord->getAttributeLabel('type')
+#5 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/validators/Validator.php(254): yii\validators\Validator->addError(Object(common\models\User), 'type', '{attribute} can...', Array)
+#6 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/validators/Validator.php(238): yii\validators\Validator->validateAttribute(Object(common\models\User), 'type')
+#7 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/base/Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\User), Array)
+#8 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/db/ActiveRecord.php(408): yii\base\Model->validate(NULL)
+#9 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/db/BaseActiveRecord.php(582): yii\db\ActiveRecord->insert(true, NULL)
+#10 /var/www/clients/client1/web241/web/frontend/models/SignupForm.php(50): yii\db\BaseActiveRecord->save()
+#11 /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php(123): frontend\models\SignupForm->signup()
+#12 [internal function]: frontend\controllers\SiteController->actionSignup()
+#13 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#14 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#15 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('signup', Array)
+#16 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('site/signup', Array)
+#17 /var/www/clients/client1/web241/web/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /var/www/clients/client1/web241/web/frontend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+2014-11-05 01:32:38 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+2014-11-05 01:32:37 [118.93.74.102][][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'dHBENENFSGInGRYZBiQ.CDUiPkcGDwoGBQMMXm4SHQsNAxV6DHF.EA=='
+    'SignupForm' => [
+        'name' => 'Administrator'
+        'email' => 'admin@site.com'
+        'password' => 'admin123'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'laum7ft1m8vl962lebb7985qs7'
+    '_csrf' => 'a0b5b4fad62dc22eb810dd8f0dfd31514b4d02b24d8a3030aa2fd059aceef658s:32:\"SiR-EavjARzsEJBdqsHj-WUiysQNO46r\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'CONTENT_LENGTH' => '189'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=laum7ft1m8vl962lebb7985qs7; _csrf=a0b5b4fad62dc22eb810dd8f0dfd31514b4d02b24d8a3030aa2fd059aceef658s%3A32%3A%22SiR-EavjARzsEJBdqsHj-WUiysQNO46r%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '49756'
+    'REQUEST_METHOD' => 'POST'
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151157.9029
+    'REQUEST_TIME' => 1415151157
+]
+2014-11-05 01:37:12 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:70
+2014-11-05 01:37:12 [118.93.74.102][][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '9s6eodeut0lp5ni8ieo0ogsu12'
+    '_csrf' => 'a0b5b4fad62dc22eb810dd8f0dfd31514b4d02b24d8a3030aa2fd059aceef658s:32:\"SiR-EavjARzsEJBdqsHj-WUiysQNO46r\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+    '__id' => null
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=9s6eodeut0lp5ni8ieo0ogsu12; _csrf=a0b5b4fad62dc22eb810dd8f0dfd31514b4d02b24d8a3030aa2fd059aceef658s%3A32%3A%22SiR-EavjARzsEJBdqsHj-WUiysQNO46r%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '53793'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151432.2323
+    'REQUEST_TIME' => 1415151432
+]
+2014-11-05 01:37:51 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:70
+2014-11-05 01:37:51 [118.93.74.102][][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '9s6eodeut0lp5ni8ieo0ogsu12'
+    '_csrf' => 'f834ca5d1651a8f52e2393c6f63dc2a4866054fd630b9a11c6ceeff51d4a6780s:32:\"t5HSpxKFGUgFRamPZOV5DClBbwXFY9tq\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => null
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=9s6eodeut0lp5ni8ieo0ogsu12; _csrf=f834ca5d1651a8f52e2393c6f63dc2a4866054fd630b9a11c6ceeff51d4a6780s%3A32%3A%22t5HSpxKFGUgFRamPZOV5DClBbwXFY9tq%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '54407'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151471.6463
+    'REQUEST_TIME' => 1415151471
+]
+2014-11-05 01:37:54 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:132
+2014-11-05 01:37:54 [118.93.74.102][][-][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '9s6eodeut0lp5ni8ieo0ogsu12'
+    '_csrf' => '3bf1a2f58e97849d04ffff57b084256767c4565401651d2930a16184f4462587s:32:\"QiumCG9dHObR5ezHKVZmtPmj_gHCWM5T\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => null
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=9s6eodeut0lp5ni8ieo0ogsu12; _csrf=3bf1a2f58e97849d04ffff57b084256767c4565401651d2930a16184f4462587s%3A32%3A%22QiumCG9dHObR5ezHKVZmtPmj_gHCWM5T%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '54407'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151474.2527
+    'REQUEST_TIME' => 1415151474
+]
+2014-11-05 01:38:06 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:70
+2014-11-05 01:38:06 [118.93.74.102][][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'hqq57cnevghv9gvvkru77anng1'
+    '_csrf' => '3bf1a2f58e97849d04ffff57b084256767c4565401651d2930a16184f4462587s:32:\"QiumCG9dHObR5ezHKVZmtPmj_gHCWM5T\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => null
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=hqq57cnevghv9gvvkru77anng1; _csrf=3bf1a2f58e97849d04ffff57b084256767c4565401651d2930a16184f4462587s%3A32%3A%22QiumCG9dHObR5ezHKVZmtPmj_gHCWM5T%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => ''
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '59560'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151486.5422
+    'REQUEST_TIME' => 1415151486
+]
+2014-11-05 01:38:10 [118.93.74.102][][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 118.93.74.102
+    in /var/www/clients/client1/web241/web/frontend/views/layouts/main.php:73
+    in /var/www/clients/client1/web241/web/frontend/controllers/SiteController.php:85
+2014-11-05 01:38:10 [118.93.74.102][][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'hqq57cnevghv9gvvkru77anng1'
+    '_csrf' => '3bf1a2f58e97849d04ffff57b084256767c4565401651d2930a16184f4462587s:32:\"QiumCG9dHObR5ezHKVZmtPmj_gHCWM5T\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/index.php'
+    '__id' => null
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/var/www/clients/client1/web241/web'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_CACHE_CONTROL' => 'max-stale=0'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=hqq57cnevghv9gvvkru77anng1; _csrf=3bf1a2f58e97849d04ffff57b084256767c4565401651d2930a16184f4462587s%3A32%3A%22QiumCG9dHObR5ezHKVZmtPmj_gHCWM5T%22%3B'
+    'HTTP_HOST' => 'yii.lamirage.hu'
+    'HTTP_REFERER' => 'http://yii.lamirage.hu/frontend/web/index.php'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:32.0) Gecko/20100101 Firefox/32.0'
+    'PATH' => '/bin:/usr/bin'
+    'PHPRC' => '/var/www/conf/web241'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REDIRECT_STATUS' => '200'
+    'REMOTE_ADDR' => '118.93.74.102'
+    'REMOTE_PORT' => '59560'
+    'REQUEST_METHOD' => 'GET'
+    'REQUEST_URI' => '/frontend/web/index.php?r=site%2Flogin'
+    'SCRIPT_FILENAME' => '/var/www/clients/client1/web241/web/frontend/web/index.php'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'SERVER_ADDR' => '185.43.205.140'
+    'SERVER_ADMIN' => 'webmaster@yii.lamirage.hu'
+    'SERVER_NAME' => 'yii.lamirage.hu'
+    'SERVER_PORT' => '80'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_SIGNATURE' => '<address>Apache/2.2.22 (Debian) Server at yii.lamirage.hu Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.2.22 (Debian)'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1415151490.7542
+    'REQUEST_TIME' => 1415151490
+]

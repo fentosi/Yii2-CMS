@@ -21,7 +21,6 @@ use yii\filters\AccessControl;
 use yii\helpers\Html;
 
 
-
 /**
  * PollController implements the CRUD actions for Poll model.
  */
@@ -88,7 +87,6 @@ class PollController extends Controller
 	{
 		$model = new Poll();
 		
-		$save = true;
 		$answers = [];
 		
 		$connection = \Yii::$app->db;
@@ -96,9 +94,7 @@ class PollController extends Controller
 		
 		try {
 		
-			$save = $this->createUpdateModel($model, $answers);
-				
-			if ($save) {
+			if ($this->createUpdateModel($model, $answers)) {
 				$transaction->commit();
 				return $this->redirect(['view', 'id' => $model->id]);				
 			} else {
@@ -136,10 +132,7 @@ class PollController extends Controller
 			$transaction = $connection->beginTransaction();			
 			
 			try {
-			
-				$save = $this->createUpdateModel($model, $answers);
-				
-			   	if ($save) {
+			   	if ($this->createUpdateModel($model, $answers)) {
 					$transaction->commit();
 					return $this->redirect(['view', 'id' => $model->id]);				
 				} else {
@@ -151,7 +144,7 @@ class PollController extends Controller
 			}
 		}
 		
-		//If no saved answers, load it from the Poll model
+		//If no answers, load it from the Poll model
 		if (count($answers) == 0) {
 			$answers = $model->answers;
 		}

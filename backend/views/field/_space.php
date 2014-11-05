@@ -1,21 +1,27 @@
 <?php
 
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
+
 use common\models\Field;
 
 /* @var $this yii\web\View */
-/* @var $model common\models\Answer */
+/* @var $model common\models\Field */
 
 ?>
 <li class="list-group-item">
-	<?= Html::activeHiddenInput($model, 'id', ['name' => 'field[id][]']) ?>
 	<div class="row <?=($model->hasErrors() ? 'has-error' : '')?>">
-		<div class="col-xs-3">
-			<?= $model->name ?>
+		<div class="col-xs-2">
+			<?= Html::activeHiddenInput($model, 'status', ['name' => 'Field['.$model->random_key.'][status]', 'class' => 'form-status']) ?>
+			<span onclick="changeStatus(this)" class="btn btn-<?=($model->status ? 'primary' : 'default')?>" data-toggle="tooltip" data-placement="top" title="<?= Yii::t('app', 'Visible'); ?>"><i class="glyphicon glyphicon-eye-<?=($model->status ? 'open' : 'close')?>"></i></span>
+			<span onclick="removeField(this);" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="<?= Yii::t('app', 'Delete'); ?>"><i class="glyphicon glyphicon-remove"></i></span>
 		</div>
-		<div class="col-xs-2 text-center">
+		<div class="col-xs-3">
+			&nbsp;
+		</div>
+		<div class="col-xs-1 text-center">
+			<?= Html::activeHiddenInput($model, 'type', ['name' => 'Field['.$model->random_key.'][type]']) ?>
 			<?= Field::getFieldTypes()[$model->type] ?>
-		</div>		
-		<div class="col-xs-2"><span onclick="removeField(this);" class="btn btn-danger pull-right"><i class="glyphicon glyphicon-remove"></i></span></div>
+		</div>				
 	</div>
 </li>
