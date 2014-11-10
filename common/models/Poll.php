@@ -90,11 +90,11 @@ class Poll extends \yii\db\ActiveRecord
     /**
      * @return array[]
      */    
-	public function getAnswersIds($id)
+	public function getAnswersIds()
     {
     	return Answer::find()
 			->select(['id'])
-			->where('deleted_at IS NULL AND poll_id = '.$id)
+			->where('deleted_at IS NULL AND poll_id = '.$this->id)
 			->asArray()
 			->all();
     }
@@ -111,7 +111,7 @@ class Poll extends \yii\db\ActiveRecord
     	$del_ids = [];
     	
 		//Delete the deleted answers
-		foreach ($this->getAnswersIds($this->id) as $ids) {
+		foreach ($this->getAnswersIds() as $ids) {
 			if (!in_array($ids['id'], $ans_ids)) {
 				$del_ids[] = $ids['id'];
 			}

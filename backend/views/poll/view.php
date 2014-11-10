@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
     		<th rowspan="<?= count($answers)+1?>"><?= Yii::t('app/poll', 'Answers') ?></th>
     		<td colspan="3">&nbsp;</td>
     	</tr>
-    	<?
+    	<?php
     		foreach ($answers as $answer) {
     			echo '
     	<tr>

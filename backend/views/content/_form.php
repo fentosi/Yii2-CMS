@@ -39,8 +39,7 @@ use common\models\Tag;
 							"advlist autolink lists link image charmap print preview hr anchor pagebreak",
 							"searchreplace wordcount visualblocks visualchars code fullscreen",
 							"insertdatetime media nonbreaking save table contextmenu directionality",
-							"paste textcolor colorpicker textpattern"
-						],
+							"paste textcolor"						],
 						'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | preview"
 					]
 				]) ?>
@@ -53,7 +52,7 @@ use common\models\Tag;
 							"advlist autolink lists link image charmap print preview hr anchor pagebreak",
 							"searchreplace wordcount visualblocks visualchars code fullscreen",
 							"insertdatetime media nonbreaking save table contextmenu directionality",
-							"paste textcolor colorpicker textpattern"
+							"paste textcolor"
 						],
 						'toolbar' => "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | preview"
 					]
@@ -65,10 +64,9 @@ use common\models\Tag;
 						'options' => ['placeholder' => Yii::t('app/tag', 'Select a tag')],
 						'pluginOptions' => [
 							'allowClear' => true,
-							'tags' => array_map(function($x){ return $x['name']; }, Tag::getTags()),
+							'tags' => array_map(function($x){ return $x['name']; }, Tag::getTagsByName()),
 						],
-					]);	
-					
+					]);
 				?>
 			</div>
 			

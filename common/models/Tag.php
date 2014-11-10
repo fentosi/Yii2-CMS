@@ -83,7 +83,7 @@ class Tag extends \yii\db\ActiveRecord
 	 *	
 	 * @return \yii\db\ActiveQuery
 	 */
-	public function getTagsWithLike($name = '', $as = '')
+	public static function getTagsWithLike($name = '', $as = '')
 	{
     	return Tag::find()
 			->select(['id', 'name' . (!empty($as) ? ' AS '.$as : '')])
@@ -100,7 +100,7 @@ class Tag extends \yii\db\ActiveRecord
 	 * @return \yii\db\ActiveQuery
 	 */
 	
-	public function getTags($name = array()) {
+	public static function getTagsByName($name = array()) {
 		return Tag::find()
 			->select(['id', 'name'])
 			->where(['deleted_at' => null])
@@ -114,7 +114,7 @@ class Tag extends \yii\db\ActiveRecord
 	 * @parameter name
 	 * @return mixed
 	 */
-	public function createTag($name)
+	public static function createTag($name)
 	{
 		$tag = new Tag();
 		$tag->name = $name;

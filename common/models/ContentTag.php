@@ -43,7 +43,7 @@ class ContentTag extends \yii\db\ActiveRecord
 	 * @return boolean
 	 */    
     public static function deleteContentTag($content_id) {
-    	return ContentTag::deleteAll('content_id = ' + $content_id);
+    	return ContentTag::deleteAll('content_id = ' . $content_id);
     }
     
 	/**
@@ -71,7 +71,7 @@ class ContentTag extends \yii\db\ActiveRecord
 		$return = true;
 		
 		$tags = explode(',', $tags);					
-		$exists_tags = array_flip(ArrayHelper::map(Tag::getTags($tags), 'id', 'name'));		
+		$exists_tags = array_flip(ArrayHelper::map(Tag::getTagsByName($tags), 'id', 'name'));		
 		
 		foreach($tags as $tag) {
 		

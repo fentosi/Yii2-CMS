@@ -78,14 +78,20 @@ class UserController extends Controller
 		$model = new User(['scenario' => 'create']);
 		
 		if (Yii::$app->request->isPost) {
-			//Generate password
-			$model->setPassword($model->password_new);
 			
 			//Generate Auth Key
 			$model->generateAuthKey();
 	
-			if ($model->load(Yii::$app->request->post()) && $model->save()) {
-				return $this->redirect(['view', 'id' => $model->id]);
+			if ($model->load(Yii::$app->request->post())) {
+				
+				//Generate password
+				$model->setPassword($model->password_new);
+
+				if ($model->save()) {
+					return $this->redirect(['view', 'id' => $model->id]);
+				} else {
+					Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
+				}
 			} else {
 				Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
 			}		

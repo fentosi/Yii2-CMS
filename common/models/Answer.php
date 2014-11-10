@@ -83,7 +83,7 @@ class Answer extends \yii\db\ActiveRecord
      * get the number of the votes for the answers of the poll
      *
      */
-    public function getVotesNum($id)
+    public static function getVotesNum($id)
     {
     	return Vote::find()
 			->select(['answer','answer.id','COUNT(vote.id) AS votes_num'])
@@ -101,7 +101,7 @@ class Answer extends \yii\db\ActiveRecord
      * get the number of the votes for the poll for calculating the percentage
      *     
      */
-    public function getVotesNumAll($id)
+    public static function getVotesNumAll($id)
     {
     	$all = Vote::find()
     		->joinWith('answer')

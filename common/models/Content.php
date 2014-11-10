@@ -168,12 +168,12 @@ class Content extends \yii\db\ActiveRecord
 			if ($this->save()) {					
 				//delete all the tags related to the content from content_tag table 
 				//save all the tags to the content_tag table
-				if (!($save = contentTag::deleteContentTag($this->id) && $save = contentTag::saveAllContentTag($this->id, $this->tags))) {
+				if (!(contentTag::deleteContentTag($this->id) !== false && $save = contentTag::saveAllContentTag($this->id, $this->tags))) {
 					Yii::$app->getSession()->setFlash('error', 'There is an error while saving the data');
 				}
 			}
-				
-			if ($save) {
+			
+			if ($save !== false) {
 				$transaction->commit();
 			} 
 				

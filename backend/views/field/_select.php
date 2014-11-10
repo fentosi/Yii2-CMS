@@ -41,7 +41,7 @@ $values = json_decode($model->value);
 				</div>
 			</div>
 			<ul class="field-value-sortable list-unstyled">
-			<?
+			<?php
 				if (isset($values->value)) {
 					foreach ($values->value as $key => $v) {
 						echo $this->render('//field/_value', [

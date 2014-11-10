@@ -58,7 +58,7 @@ FormAsset::register($this);
 
 
 			<ul class="form-sortable list-group dd-list" id="table-form-fields">
-			<?
+			<?php
 				foreach ($fields as $field) {
 				
 					if ($field->random_key == null) {

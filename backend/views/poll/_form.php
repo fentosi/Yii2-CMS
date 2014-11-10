@@ -62,7 +62,7 @@ PollAsset::register($this);
 		
 		<ul class="poll-sortable list-group" id="table-poll-answers">
 
-		<?
+		<?php
 		foreach ($answers as $ans) {			
 			echo $this->render('/poll/_answer', [
 				'model' => $ans,
