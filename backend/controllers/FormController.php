@@ -174,7 +174,7 @@ class FormController extends Controller
 				
 					$field = new Field();
 					
-					$field->name = Html::encode(strip_tags($postFields[$key]['name']));
+					$field->name = (!empty($postFields[$key]['name']) ? Html::encode(strip_tags($postFields[$key]['name'])) : '' );
 					$field->type = $postFields[$key]['type'];
 					$field->position = ++$position;
 					$field->form_id = $model->id;
