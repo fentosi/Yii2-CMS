@@ -16,5 +16,6 @@ Installation
 6. Update your composer with 'composer self-update' 
 7. Update with the command 'composer update'
 8. Check the reqirements with yourhost/requirements.php (need php5-mcrypt, php5-intl)
-9. Load the backend with: yourhost/backend/web
-10. Login with admin@site.com:admin123
+9. Add write privileges to you HTTP Server to the followings: backend/web/assets backend/runtime/*  frontend/web/assets
+10. Load the backend with: yourhost/backend/web
+11. Login with admin@site.com:admin123
