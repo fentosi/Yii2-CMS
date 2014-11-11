@@ -22,6 +22,13 @@ class TagSearch extends Tag
 			[['name', 'slug'], 'safe'],
 		];
 	}
+	
+	/**
+	 * @override
+	 */
+	public function behaviors() {			
+ 		return [];
+ 	}	
 
 	/**
 	 * @inheritdoc
@@ -57,7 +64,7 @@ class TagSearch extends Tag
 			'updated_at' => $this->updated_at,
 			'deleted_at' => $this->deleted_at,
 		]);
-		
+				
 		$query->andFilterWhere(['like', 'name', $this->name])
 			->andFilterWhere(['like', 'slug', $this->slug]);
 

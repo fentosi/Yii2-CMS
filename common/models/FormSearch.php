@@ -19,7 +19,7 @@ class FormSearch extends Form
 	{
 		return [
 			[['id'], 'integer'],
-			[['name', 'e-mail', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
+			[['name', 'email', 'created_at', 'updated_at', 'deleted_at'], 'safe'],
 		];
 	}
 
@@ -59,7 +59,7 @@ class FormSearch extends Form
 		]);
 
 		$query->andFilterWhere(['like', 'name', $this->name])
-			->andFilterWhere(['like', 'e-mail', $this->e-mail]);
+			->andFilterWhere(['like', 'email', $this->email]);
 
 		return $dataProvider;
 	}
