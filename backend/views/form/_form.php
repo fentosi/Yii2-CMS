@@ -80,7 +80,7 @@ FormAsset::register($this);
     <?php ActiveForm::end(); ?>
 </div>
 
-<?
+<?php
 	$this->registerJs( "
 	$('.form-sortable').sortable();
 	$('.btn').tooltip();
